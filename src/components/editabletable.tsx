@@ -29,21 +29,24 @@ const Editabletable: React.FC<IEditableTableProps> = ({
 }) => {
   const [removalItemIndex, setRemovalItemIndex] = React.useState<string>("");
   const [open, setOpen] = React.useState<boolean>(false);
-  const [editPencil, setEditPencil] = React.useState<boolean>(false)
-  const [emails, setEmail] = React.useState<string[]>(['aa1@website.com', 'aa2@website.com', 'aa3@website.com', 'aa4@website.com', 'aa5@website.com', 'aa6@website.com', 'aa7@website.com', 'aa8@website.com', 'aa9@website.com', 'aa10@website.com', 'aa11@website.com', 'aa12@website.com'])
+  const [editPencil, setEditPencil] = React.useState<string>('')
+  const [emails, setEmails] = React.useState<string[]>(['aa1@website.com', 'aa2@website.com', 'aa3@website.com', 'aa4@website.com', 'aa5@website.com', 'aa6@website.com', 'aa7@website.com', 'aa8@website.com', 'aa9@website.com', 'aa10@website.com', 'aa11@website.com', 'aa12@website.com'])
+  // const [editedEmails, setEditedEmails] = React.useState<string[]>(emails);
+
   const handleOpen = (itemIndex: string) => {
     setOpen(true);
     setRemovalItemIndex(itemIndex);
   };
   const handleClose = () => {
     setOpen(false);
-    setEditPencil(false);
+    setEditPencil('');
   }
 
   return (
     <div className="component-editabletable">
       {emails.map((email, index) => {
-
+        // const editedEmail = editedEmails[index];
+        
         return (
           <div
             className="component-editabletable__item"
@@ -53,22 +56,30 @@ const Editabletable: React.FC<IEditableTableProps> = ({
               backgroundColor: colorTheme === "dark" ? "#000000cc" : "#102F82",
             }}
           >
-            <div className="component-editabletable__item__title">
+            <div className="component-editabletable__item__title" style={{paddingTop:50}}>
               {email}
             </div>
-            <div className="component-editabletable__item__edit" onClick={() => setEditPencil(true)}>
+            <div className="component-editabletable__item__edit" onClick={() => setEditPencil(`${index}`)}>
               <img src={PencilSvg} style={{ width: 30 }} />
             </div>
             <Modal
-              open={editPencil}
+              open={editPencil == `${index}`}
               onClose={handleClose}
-
             >
               <Box sx={style}>
                 <Typography id="modal-modal-title" variant="h6" component="h2">
                   Please input your email address
                 </Typography>
-                <Input type="email" onChange={(e) => setEmail(e.target.value)} value={email} required />;
+                <Input
+                  type="email"
+                  onChange={(e) => {
+                    const newEmails = [...emails];
+                    newEmails[index] = e.target.value;
+                    setEmails(newEmails);
+                  }}
+                  value={email}
+                  required
+                />;
                 <Button
                   style={{
                     backgroundColor: "blue",
@@ -77,7 +88,9 @@ const Editabletable: React.FC<IEditableTableProps> = ({
                     marginTop: 30,
                   }}
                   onClick={() => {
-                    handleClose();
+                    // handleClose();
+                    setEditPencil('')
+                    setEmails(emails)
                   }}
                 >
                   save

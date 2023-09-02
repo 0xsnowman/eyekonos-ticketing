@@ -57,28 +57,30 @@ const EventDetails = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterBold",
                 cursor: "pointer",
               }}
               onClick={() => history.goBack()}
             >
               <img src={BackSvg} width={40} height={40} />
             </div>
-            <Button
-              border
-              borderRadius
-              color="white"
-              fontSize={28}
-              fontWeight="bold"
-              paddingVertical={20}
-              borderColor="#F0BB51"
-              borderWidth={3}
-              fixedWidth
-              width={400}
-              hoverable={false}
-            >
-              Event Details
-            </Button>
+            
+              <Button
+                border
+                borderRadius
+                color="white"
+                fontSize={55}
+                fontWeight="bold"
+                paddingVertical={20}
+                borderColor="#F0BB51"
+                borderWidth={3}
+                fixedWidth
+                width={400}
+                hoverable={false}
+              >
+               <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Event Details</div>
+              </Button>
+            
             <div style={{ width: 100 }}></div>
           </div>
           <div className="page-eventdetails__content__main__table">
@@ -92,9 +94,9 @@ const EventDetails = () => {
                 }}
               />
             </div>
-            <div className="page-eventdetails__content__main__table__button">
+            <div className="page-eventdetails__content__main__table__button" >
               <SpinButton
-                paddingVertical={12}
+                paddingVertical={23}
                 paddingHorizontal={20}
                 borderRadius
                 borderRadiusAmount={25}

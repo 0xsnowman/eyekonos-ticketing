@@ -81,7 +81,7 @@ const UploadDataLimits = () => {
                 backgroundColor="linear-gradient(180deg, #102F82 0%, #142252 100%)" 
                 hoverable={false}
               >
-                Upload Data Limits
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Upload Data Limits</div>
               </Button>
               <Button
                 borderRadius
@@ -92,26 +92,26 @@ const UploadDataLimits = () => {
                 backgroundColor="#253F9A"
                 hoverable={false}
               >
-                0.8 / 1 GB Used
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>0.8 / 1 GB Used</div>
               </Button>
 
               <div className="page-uploaddatalimits__content__main__buttons__description">
                 <div className="page-uploaddatalimits__content__main__buttons__description__media">
                   <div className="page-uploaddatalimits__content__main__buttons__description__media__inside">
-                    <span>User Media</span>
-                    <span>(~87.5%)</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>User Media</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>(~87.5%)</span>
                   </div>
                 </div>
                 <div className="page-uploaddatalimits__content__main__buttons__description__detail">
                   <div className="page-uploaddatalimits__content__main__buttons__description__detail__body">
-                    <span>~0.7 GB used</span>
-                    <span>~0.8 GB max</span>
-                    <span>15.3 MB ~ x% / user avg</span>
-                    <span>30MB ~ x% / user max</span>
-                    <span>~3MB ~ x% / user max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>~0.7 GB used</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>~0.8 GB max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>15.3 MB ~ x% / user avg</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>30MB ~ x% / user max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>~3MB ~ x% / user max</span>
                   </div>
                   <div className="page-uploaddatalimits__content__main__buttons__description__detail__title">
-                    <span>= 87.5% = 0.7GB</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>= 87.5% = 0.7GB</span>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const UploadDataLimits = () => {
                     color: "white",
                   }}
                 >
-                  GB/User
+                  <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>GB/User</div>
                 </div>
                 <input
                   style={{
@@ -157,7 +157,7 @@ const UploadDataLimits = () => {
                     color: "white",
                   }}
                 >
-                  Uploads/User
+                  <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>Uploads/User</div>
                 </div>
                 <input
                   style={{
@@ -197,7 +197,7 @@ const UploadDataLimits = () => {
                   fontWeight="bold"
                   backgroundColor="#253F9A"
                 >
-                  SAVE
+                  <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>SAVE</div>
                 </Button>
               </div>
             </div>

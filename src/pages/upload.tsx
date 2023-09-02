@@ -70,7 +70,7 @@ const Upload = () => {
               fontWeight="bold"
               hoverable={false}
             >
-              OpenSea Details
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>OpenSea Details</div>
             </Button>
           </div>
           <div>

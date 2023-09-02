@@ -69,9 +69,9 @@ const Permissions = () => {
               borderWidth={2}
             >
               <div>
-                <span>Permissions</span>
+                <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>Permissions</span>
                 <br />
-                <span>- email@website.com</span>
+                <span style= {{fontFamily:"InterLight", fontSize:"18px"}}>- email@website.com</span>
               </div>
             </Button>
           </div>
@@ -86,7 +86,7 @@ const Permissions = () => {
                 fontSize={22}
                 fontWeight="bold"
               >
-                SAVE
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>SAVE</div>
               </Button>
             </div>
           </div>

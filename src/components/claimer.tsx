@@ -6,7 +6,7 @@ import { useHistory, useLocation } from "react-router-dom";
 const Claimer = () => {
   const history = useHistory();
   return (
-    <div className="component-claimer">
+    <div className="component-claimer" style={{height: "800px"}}>
       <div className="component-claimer__main">
         <div
           className="component-claimer__main__corner-cut-rectangle"

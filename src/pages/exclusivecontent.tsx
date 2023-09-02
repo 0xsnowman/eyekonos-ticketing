@@ -75,7 +75,7 @@ const ExclusiveContent = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                Event#1 - Exclusive Content
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Event#1 - Exclusive Content</div>
               </Button>
               <div className="page-exclusivecontent__content__main__nfts">
                 <div className="page-exclusivecontent__content__main__nfts__nft-filter">

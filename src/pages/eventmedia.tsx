@@ -88,7 +88,7 @@ const EventMedia = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                Event#1 - Media
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Event#1 - Media</div>
               </Button>
               <div
                 className={[
@@ -98,10 +98,10 @@ const EventMedia = () => {
               >
                 <div className="page-eventmedia__content__main__nfts__nft-filter">
                   <div className="page-eventmedia__content__main__nfts__nft-filter__header">
-                    <div className="page-eventmedia__content__main__nfts__nft-filter__header__title">
+                    <div className="page-eventmedia__content__main__nfts__nft-filter__header__title" style= {{fontFamily:"InterLight", fontSize:"22px"}}>
                       My Uploads
                     </div>
-                    <div className="page-eventmedia__content__main__nfts__nft-filter__header__subscription">
+                    <div className="page-eventmedia__content__main__nfts__nft-filter__header__subscription" style= {{fontFamily:"InterLight", fontSize:"18px"}}>
                       Upload
                     </div>
                     <div
@@ -137,7 +137,7 @@ const EventMedia = () => {
                 <div className="page-eventmedia__content__main__event-nfts__nft-filter">
                   <div className="page-eventmedia__content__main__event-nfts__nft-filter__header">
                     <div className="page-eventmedia__content__main__event-nfts__nft-filter__header__title">
-                      <div className="page-eventmedia__content__main__event-nfts__nft-filter__header__title__text">
+                      <div className="page-eventmedia__content__main__event-nfts__nft-filter__header__title__text" style= {{fontFamily:"InterLight", fontSize:"22px"}}>
                         Event Media
                       </div>
                       <div

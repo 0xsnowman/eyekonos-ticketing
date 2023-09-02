@@ -137,7 +137,7 @@ const ETabView: React.FC<IETabViewProps> = ({ type = "upload" }) => {
               borderRadiusAmount={10}
               paddingHorizontal={20}
             >
-              Upload File +
+              <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>Upload File +</div>
             </Button>
             <Button
               backgroundColor="#F0BB51"
@@ -148,7 +148,7 @@ const ETabView: React.FC<IETabViewProps> = ({ type = "upload" }) => {
               fontWeight="bold"
               borderRadiusAmount={10}
             >
-              Upload Folder
+              <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>Upload Folder</div>
             </Button>
           </div>
         )}

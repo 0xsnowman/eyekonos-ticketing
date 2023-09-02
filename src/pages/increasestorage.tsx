@@ -71,7 +71,7 @@ const IncreaseStorage = () => {
               borderColor="#F0BB51"
               borderWidth={2}
             >
-              <span>Increase Storage</span>
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Increase Storage</div>
             </Button>
           </div>
           <div className="page-increasestorage__content__main__table">

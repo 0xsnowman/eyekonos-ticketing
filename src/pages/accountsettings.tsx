@@ -41,6 +41,8 @@ const AccountSettings = () => {
         // height: deviceHeight - 90,
       }}
     >
+
+
       <div className="page-accountsettings__content">
         <div className="page-accountsettings__content__main">
           <div className="page-accountsettings__content__main__table">
@@ -60,6 +62,7 @@ const AccountSettings = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

@@ -44,9 +44,9 @@
 .molecule-page {
   scrollbar-width: 12px;
   // scrollbar-color: #102f82 transparent;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   // margin-top: 90px;
-  margin-top: 10vmin;
+  // margin-top: 10vmin;
   font-family: "Inter";
   @media only screen and (max-width: 780px) {
     width: 100%;
@@ -76,4 +76,8 @@
       color: #4876c1;
     }
   }
+}
+
+.molecule-page, .side-bar__content {
+  margin-top: 100px !important;
 }

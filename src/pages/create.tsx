@@ -53,7 +53,7 @@ const Create = (props: any) => {
                 color="white"
                 hoverable={false}
               >
-                New Event +
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>New Event +</div>
               </Button>
               <div
                 style={{
@@ -67,7 +67,7 @@ const Create = (props: any) => {
                 hoverable={false}
                 borderRadiusAmount={12}
               >
-                Collaborations
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>Collaborations</div>
               </Button>
             </div>
             <span
@@ -113,7 +113,7 @@ const Create = (props: any) => {
                     history.push("/event-creator/new-event");
                   }}
                 >
-                  New Event +
+                  <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>New Event +</div>
                 </Button>
               )}
               {stage === "collaboration" && (
@@ -159,7 +159,7 @@ const Create = (props: any) => {
                   setStage("collaboration");
                 }}
               >
-                Collaborations
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>Collaborations</div>
               </Button>
             </div>
             <div className="page-create__content__main-filter__event-filter">

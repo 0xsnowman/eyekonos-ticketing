@@ -130,7 +130,7 @@ const Settings = () => {
               width={600}
               hoverable={false}
             >
-              Settings
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Settings</div>
             </Button>
             <div style={{ width: 100 }}></div>
           </div>
@@ -178,7 +178,7 @@ const Settings = () => {
                         fontWeight: "bold",
                       }}
                     >
-                      <span>NFT Minting Times</span>
+                      <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>NFT Minting Times</span>
                     </div>
                     <div
                       style={{
@@ -205,7 +205,7 @@ const Settings = () => {
                             paddingBottom: 8,
                           }}
                         >
-                          <span>NFT Mint Start Time</span>
+                          <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>NFT Mint Start Time</span>
                         </div>
                         <LocalizationProvider dateAdapter={AdapterDayjs}>
                           <DemoContainer components={["DatePicker"]}>
@@ -226,9 +226,9 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <div>No</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>No</div>
                         <IOSSwitch checkedTrackColor="#F0E051" />
-                        <div>Yes</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>Yes</div>
                       </div>
                     </div>
                     <div
@@ -243,7 +243,7 @@ const Settings = () => {
                         paddingBottom: 10,
                       }}
                     >
-                      <span>Ticket Transfers Allowed</span>
+                      <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>Ticket Transfers Allowed</span>
                       <div
                         style={{
                           display: "flex",
@@ -252,9 +252,9 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <div>No</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>No</div>
                         <IOSSwitch checkedTrackColor="#F0E051" />
-                        <div>Yes</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>Yes</div>
                       </div>
                     </div>
                     <div
@@ -278,8 +278,8 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <span>Ticket eYeKONs</span>
-                        <span>(Allow Ticket to be Minted as NFT?)</span>
+                        <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>Ticket eYeKONs</span>
+                        <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>(Allow Ticket to be Minted as NFT?)</span>
                       </div>
                       <div
                         style={{
@@ -289,9 +289,9 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <div>No</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>No</div>
                         <IOSSwitch checkedTrackColor="#F0E051" />
-                        <div>Yes</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>Yes</div>
                       </div>
                     </div>
                     <div
@@ -314,8 +314,8 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <span>Admission Verification Required?</span>
-                        <span>(Only Mint Scanned Tickets)</span>
+                        <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>Admission Verification Required?</span>
+                        <span style= {{fontFamily:"InterBold", fontSize:"18px"}}>(Only Mint Scanned Tickets)</span>
                       </div>
                       <div
                         style={{
@@ -325,13 +325,13 @@ const Settings = () => {
                           gap: 3,
                         }}
                       >
-                        <div>No</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>No</div>
                         <IOSSwitch checkedTrackColor="#F0E051" />
-                        <div>Yes</div>
+                        <div style= {{fontFamily:"InterBold", fontSize:"18px"}}>Yes</div>
                       </div>
                     </div>
                   </div>
-                  <div className="page-settings__content__main__table__description__totalprice">
+                  <div className="page-settings__content__main__table__description__totalprice" style= {{fontFamily:"InterBold", fontSize:"18px"}}>
                     *Change the default properties of tickets*
                   </div>
                 </div>
@@ -347,7 +347,7 @@ const Settings = () => {
                 fontSize={22}
                 fontWeight="bold"
               >
-                SAVE
+                <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>SAVE</div>
               </Button>
             </div>
           </div>

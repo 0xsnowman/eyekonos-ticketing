@@ -1,6 +1,7 @@
 .side-bar {
   scrollbar-width: 12px;
   scrollbar-color: #102f82 transparent;
+  font-family: "Inter";
 
   ::-webkit-scrollbar {
     width: 12px;
@@ -32,7 +33,7 @@
   width: 25%;
   // max-width: 400px;
   position: sticky;
-  font-family: "Inter";
+
 
   &.invisible {
     display: none;
@@ -53,8 +54,9 @@
 
     height: calc(100vh - 21.5vmin);
 
-    overflow-y: scroll;
-    scrollbar-gutter: stable both-edges;
+    overflow-x: hidden;
+    overflow-y: auto;
+    // scrollbar-gutter: stable both-edges;
   }
 
   &__add-category {
@@ -67,5 +69,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: "Inter";
   }
 }

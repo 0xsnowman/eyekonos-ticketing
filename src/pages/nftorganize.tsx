@@ -286,7 +286,7 @@ const NFTOrganize = () => {
                       setOpen(true);
                     }}
                   >
-                    Save
+                    <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>Save</div>
                   </Button>
                 </div>
               </div>

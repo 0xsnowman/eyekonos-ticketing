@@ -98,6 +98,7 @@ const Button: React.FC<IButtonProps> = ({
         justifyContent: borderOutside ? "center" : "initial",
         alignItems: borderOutside ? "center" : "initial",
         minWidth: minWidth,
+        fontFamily : "InterBold"
       }}
     >
       <div

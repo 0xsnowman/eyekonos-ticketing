@@ -75,7 +75,7 @@ const ManageAdmissionsTable = () => {
               borderWidth={2}
               hoverable={false}
             >
-              Manage Admissions
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Manage Admissions</div>
             </Button>
           </div>
           <div className="page-manageadmissionstable__content__main__options">
@@ -90,7 +90,7 @@ const ManageAdmissionsTable = () => {
               width={180}
               fixedWidth
             >
-              New +
+              <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>New +</div>
             </Button>
             <ESearchView />
           </div>

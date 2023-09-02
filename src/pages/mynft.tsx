@@ -95,7 +95,7 @@ const MyNFT = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                Event#1 - NFT's
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Event#1 - NFT's</div>
               </Button>
               <a
                 style={{
@@ -116,10 +116,10 @@ const MyNFT = () => {
               >
                 <div className="page-mynft__content__main__nfts__nft-filter">
                   <div className="page-mynft__content__main__nfts__nft-filter__header">
-                    <div className="page-mynft__content__main__nfts__nft-filter__header__title">
+                    <div className="page-mynft__content__main__nfts__nft-filter__header__title" style= {{fontFamily:"InterLight", fontSize:"22px"}}>
                       My NFT's
                     </div>
-                    <div className="page-mynft__content__main__nfts__nft-filter__header__subscription">
+                    <div className="page-mynft__content__main__nfts__nft-filter__header__subscription" style= {{fontFamily:"InterLight", fontSize:"18px"}}>
                       Mint & Claim (8/10)
                     </div>
                     <div
@@ -156,7 +156,7 @@ const MyNFT = () => {
                 <div className="page-mynft__content__main__event-nfts__nft-filter">
                   <div className="page-mynft__content__main__event-nfts__nft-filter__header">
                     <div className="page-mynft__content__main__event-nfts__nft-filter__header__title">
-                      <div className="page-mynft__content__main__event-nfts__nft-filter__header__title__text">
+                      <div className="page-mynft__content__main__event-nfts__nft-filter__header__title__text" style= {{fontFamily:"InterLight", fontSize:"22px"}}>
                         Event NFT's
                       </div>
                       <div

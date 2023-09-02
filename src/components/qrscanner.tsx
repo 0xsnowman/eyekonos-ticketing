@@ -19,11 +19,11 @@ const QRScanner = () => {
       <div className="component-qrscanner__buttons">
         <div className="component-qrscanner__buttons__addcollaborator">
           <img src={AddCollaboratorSvg} style={{ width: 40 }} />
-          <span>Collaborators</span>
+          <span style= {{fontFamily:"InterBold", fontSize:"20px"}}>Collaborators</span>
         </div>
         <div className="component-qrscanner__buttons__openadmissionsportallink">
           <img src={OpenAdmissionsPortalLinkSvg} style={{ width: 40 }} />
-          <span>Scanner Link</span>
+          <span style= {{fontFamily:"InterBold", fontSize:"20px"}}>Scanner Link</span>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const PageCreate = () => {
       <div className="page-pagecreate__content">
         <div className="page-pagecreate__content__main">
           <div className="page-pagecreate__content__main__linkbutton">
-            <LinkButton border borderRadius placeHolder="Enter URL Page Name @ website.com/..." />
+          <div style= {{fontFamily:"InterBold", fontSize:"16px"}}><LinkButton border borderRadius placeHolder="Enter URL Page Name @ website.com/..." /></div>
           </div>
         </div>
       </div>

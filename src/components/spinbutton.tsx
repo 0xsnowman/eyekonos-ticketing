@@ -29,7 +29,7 @@ interface ISpinButtonProps {
 const SpinButton: React.FC<ISpinButtonProps> = ({
   children,
   backgroundColor = "#102F82",
-  onClick = () => {},
+  onClick = () => { },
   disabled,
   fixedWidth,
   fontSize = 18,
@@ -138,15 +138,15 @@ const SpinButton: React.FC<ISpinButtonProps> = ({
       >
         <img src={ButtonPinSvg} width={110} />
       </div>
-      <div
+      {!extraPrice && (<div
         className="molecule-spinbutton__dot"
         style={{
-          marginTop: merchandiseTop,
+          marginTop: merchandiseTop ,
         }}
-      />
+      />)}
       {!extraPrice && (
         <div
-          className="molecule-spinbutton__price"
+          className="molecule-spinbutton__pricenot"
           style={{
             marginTop: merchandiseTop - 10,
             right: -45,
@@ -158,9 +158,17 @@ const SpinButton: React.FC<ISpinButtonProps> = ({
       )}
       {extraPrice && (
         <div
+          className="molecule-spinbutton__dot"
+          style={{
+            marginTop: merchandiseTop - 20,
+          }}
+        />
+      )}
+      {extraPrice && (
+        <div
           className="molecule-spinbutton__price"
           style={{
-            marginTop: merchandiseTop - 10,
+            marginTop: merchandiseTop - 25,
             fontSize: 22,
           }}
         >
@@ -171,7 +179,7 @@ const SpinButton: React.FC<ISpinButtonProps> = ({
         <div
           className="molecule-spinbutton__extraprice"
           style={{
-            marginTop: merchandiseTop - 14,
+            marginTop: merchandiseTop - 35,
           }}
         >
           $235

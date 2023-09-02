@@ -81,7 +81,7 @@ const AddToCollection = () => {
                   borderWidth={2}
                   hoverable={false}
                 >
-                  Create & Manage NFT’s
+                  <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create & Manage NFT’s</div>
                 </Button>
 
                 <div className="page-addtocollection__content__main__buttons__right__twobtns">
@@ -163,7 +163,7 @@ const AddToCollection = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                Choose Collectible Type
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Choose Collectible Type</div>
               </Button>
             </div>
             <div className="page-collectiontype__content__main__table">
@@ -176,9 +176,9 @@ const AddToCollection = () => {
                 }}
               >
                 <CollectionTypeTicket title="Standard NFT" subtitle="(ERC-721)">
-                  <span>- Unique Tradeable Asset</span>
-                  <span>- Royalties for Creator</span>
-                  <span>- Compatible with most blockchain wallets</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Unique Tradeable Asset</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Royalties for Creator</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Compatible with most blockchain wallets</span>
                 </CollectionTypeTicket>
               </div>
               <div
@@ -207,9 +207,9 @@ const AddToCollection = () => {
                 }}
               >
                 <CollectionTypeTicket title="eYeKON" subtitle="(COMING SOON)">
-                  <span>- Social Media Integration</span>
-                  <span>- Gaming Integration</span>
-                  <span>- And more...</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Social Media Integration</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Gaming Integration</span>
+                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- And more...</span>
                 </CollectionTypeTicket>
               </div>
             </div>
@@ -250,7 +250,7 @@ const AddToCollection = () => {
                 fontWeight="bold"
                 hoverable={false}
               >
-                Create Standard NFT (ERC 721)
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create Standard NFT (ERC 721)</div>
               </Button>
             </div>
             <div>

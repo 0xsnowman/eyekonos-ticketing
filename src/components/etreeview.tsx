@@ -133,7 +133,7 @@ const ETreeView: React.FC<IETreeViewProps> = ({
         key={index}
         style={{ position: "relative", backgroundColor: backgroundColor }}
         className="hover-item"
-      >
+      >{console.log('item.childern', item.children)}
         {isSideBar && (
           <CustomTreeItem
             key={index}

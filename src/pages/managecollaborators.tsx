@@ -75,7 +75,7 @@ const ManageCollaborators = () => {
               borderWidth={2}
               hoverable={false}
             >
-              Manage Collaborators
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Manage Collaborators</div>
             </Button>
           </div>
           <div className="page-managecollaborators__content__main__options">
@@ -89,7 +89,7 @@ const ManageCollaborators = () => {
                 width={180}
                 fixedWidth
               >
-                New +
+                <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>New +</div>
               </Button>
             <ESearchView />
           </div>

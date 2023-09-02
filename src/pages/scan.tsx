@@ -67,10 +67,11 @@ const Scan = () => {
               fontWeight={"bold"}
               fontSize={30}
               borderWidth={3}
-              color={"2F50C2"}
+              color={"white"}
               hoverable={false}
+              
             >
-              Admit Entry
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Admit Entry</div>
             </Button>
           </div>
           <div className="page-scan__content__main__qrscanner">
