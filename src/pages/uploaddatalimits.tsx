@@ -78,7 +78,7 @@ const UploadDataLimits = () => {
                 fontSize={22}
                 paddingVertical={20}
                 fontWeight="bold"
-                backgroundColor="linear-gradient(180deg, #102F82 0%, #142252 100%)"
+                backgroundColor="linear-gradient(180deg, #102F82 0%, #142252 100%)" 
                 hoverable={false}
               >
                 Upload Data Limits

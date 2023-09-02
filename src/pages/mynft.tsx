@@ -34,6 +34,13 @@ const MyNFT = () => {
   const [eventNFTButtonState, setEventNFTButtonState] = React.useState<
     "+" | "-"
   >("+");
+  interface INftTicketProps {
+    type: string;
+    status: string;
+    check?: boolean;
+    className?: string; // Define the className prop here
+    // ...
+  }
 
   return (
     <div
@@ -130,6 +137,7 @@ const MyNFT = () => {
                       buttonState === "-" ? "spread" : "collapse",
                     ].join(" ")}
                   >
+
                     <NftTicket type="event-ticket" status="unknown" check />
                     <NftTicket type="event-ticket" check group />
                     <NftTicket type="event-ticket" />

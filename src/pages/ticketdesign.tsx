@@ -148,9 +148,10 @@ const TicketDesign = () => {
                 color="white"
                 fontWeight="bold"
                 fixedWidth
-                width={150}
+                width={200}
+                marginOutside={20}
               >
-                Upload Image+
+                Upload Image +
               </Button>
             </div>
             <div style={{ width: 100 }}></div>

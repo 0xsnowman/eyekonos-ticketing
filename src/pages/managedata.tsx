@@ -122,7 +122,7 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/user-uploads");
                   }}
@@ -136,7 +136,7 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/upload-limits");
                   }}
@@ -150,7 +150,7 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/add-storage");
                   }}

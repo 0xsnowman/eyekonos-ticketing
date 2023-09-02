@@ -67,7 +67,7 @@ const Scan = () => {
               fontWeight={"bold"}
               fontSize={30}
               borderWidth={3}
-              color={"#FFFFFF"}
+              color={"2F50C2"}
               hoverable={false}
             >
               Admit Entry

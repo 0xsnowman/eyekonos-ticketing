@@ -192,9 +192,10 @@ const Settings = () => {
                     >
                       <div
                         style={{
-                          display: "flex",
+                          display: "grid",
                           justifyContent: "center",
                           alignItems: "center",
+                          flexDirection:'column'
                         }}
                       >
                         <div

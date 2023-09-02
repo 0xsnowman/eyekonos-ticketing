@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import PencilSvg from "../assets/svgs/pencil.svg";
 import TrashSvg from "../assets/svgs/trash.svg";
 import WarningSvg from "../assets/svgs/warning.svg";
+import { Input } from "@mui/material";
 
 const style = {
   position: "absolute" as "absolute",
@@ -27,15 +28,22 @@ const Editabletable: React.FC<IEditableTableProps> = ({
   colorTheme = "dark",
 }) => {
   const [removalItemIndex, setRemovalItemIndex] = React.useState<string>("");
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
+  const [editPencil, setEditPencil] = React.useState<boolean>(false)
+  const [emails, setEmail] = React.useState<string[]>(['aa1@website.com', 'aa2@website.com', 'aa3@website.com', 'aa4@website.com', 'aa5@website.com', 'aa6@website.com', 'aa7@website.com', 'aa8@website.com', 'aa9@website.com', 'aa10@website.com', 'aa11@website.com', 'aa12@website.com'])
   const handleOpen = (itemIndex: string) => {
     setOpen(true);
     setRemovalItemIndex(itemIndex);
   };
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+    setEditPencil(false);
+  }
+
   return (
     <div className="component-editabletable">
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => {
+      {emails.map((email, index) => {
+
         return (
           <div
             className="component-editabletable__item"
@@ -46,13 +54,36 @@ const Editabletable: React.FC<IEditableTableProps> = ({
             }}
           >
             <div className="component-editabletable__item__title">
-              #{index}
-              {index + 1}
-              {index + 2}
+              {email}
             </div>
-            <div className="component-editabletable__item__edit">
+            <div className="component-editabletable__item__edit" onClick={() => setEditPencil(true)}>
               <img src={PencilSvg} style={{ width: 30 }} />
             </div>
+            <Modal
+              open={editPencil}
+              onClose={handleClose}
+
+            >
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Please input your email address
+                </Typography>
+                <Input type="email" onChange={(e) => setEmail(e.target.value)} value={email} required />;
+                <Button
+                  style={{
+                    backgroundColor: "blue",
+                    color: "white",
+                    marginLeft: 300,
+                    marginTop: 30,
+                  }}
+                  onClick={() => {
+                    handleClose();
+                  }}
+                >
+                  save
+                </Button>
+              </Box>
+            </Modal>
             <Modal
               open={open}
               onClose={handleClose}

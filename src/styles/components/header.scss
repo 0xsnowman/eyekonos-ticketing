@@ -46,8 +46,7 @@
         display: none;
       }
 
-      &.side_bar {
-      }
+      &.side_bar {}
 
       @media only screen and (max-width: 720px) {
         display: none;
@@ -109,7 +108,7 @@
       bottom: 0%;
       display: none;
       flex-direction: column;
-      color: white;
+
       display: none;
       transition: 0.5s;
       overflow-x: hidden;
@@ -123,19 +122,22 @@
         // border-bottom: 1px solid white;
         border-bottom: 1px solid #333333;
         cursor: pointer;
+
         &__text {
           padding-left: 20px;
           padding-right: 20px;
           height: 80px;
           text-decoration: none;
-          color: white;
           display: flex;
           align-items: center;
           justify-content: space-between;
           font-family: "AquireBold";
+          color: white;
 
           &__text {
+            
           }
+
           &__dropdown {
             width: 2vmin;
             height: 2vmin;
@@ -149,6 +151,7 @@
         &__menu {
           overflow: hidden;
           transition-duration: $t-transition;
+
           &__item {
             padding: 20px;
             padding-left: 30px;
@@ -204,13 +207,16 @@
       @media only screen and (max-width: 1096px) {
         display: flex;
         cursor: pointer;
+
         &.active &__bar:nth-child(2) {
           opacity: 0;
         }
+
         &.active &__bar:nth-child(1) {
           -webkit-transform: translateY(10px) rotate(45deg);
           transform: translateY(10px) rotate(45deg);
         }
+
         &.active &__bar:nth-child(3) {
           -webkit-transform: translateY(-10px) rotate(-45deg);
           transform: translateY(-10px) rotate(-45deg);
@@ -223,7 +229,7 @@
       flex-direction: row;
       gap: 25px;
       align-items: center;
-      color: white;
+      // color: white;
 
       @media only screen and (max-width: 1096px) {
         display: none;
@@ -249,12 +255,14 @@
         }
 
         &:hover {
-          text-decoration: underline;
+          text-decoration: underline;          
+          
         }
-
+        
         &:hover &__menu {
           display: flex;
         }
+
         &__menu {
           position: absolute;
           display: none;
@@ -272,6 +280,7 @@
             white-space: nowrap;
             padding: 10px;
             text-decoration: none;
+
             &:hover {
               background-color: #333333;
             }
@@ -303,4 +312,8 @@
       }
     }
   }
+}
+
+.activeHeader {
+  color:#F0BB51
 }

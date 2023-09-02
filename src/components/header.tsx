@@ -28,6 +28,7 @@ const Header: React.FC<IHeaderProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAbout, setIsOpenAbout] = useState(false);
   const [isOpenCommunity, setIsOpenCommunity] = useState(false);
+  const [clicked, setClicked] = useState('');
 
   const mobileAboutMenu = useRef<HTMLHeadingElement>(null);
   const mobileCommunityMenu = useRef<HTMLHeadingElement>(null);
@@ -112,8 +113,9 @@ const Header: React.FC<IHeaderProps> = ({
                   }}
                 >
                   <div
-                    className="component-header__fixer__nav-mobile__link__text__text"
+                    className={`component-header__fixer__nav__link__text ${clicked == 'setup' ? 'activeHeader' : ''}`}
                     onClick={() => {
+                      setClicked('setup')
                       history.push("/event-creator/setup");
                     }}
                   >
@@ -148,9 +150,10 @@ const Header: React.FC<IHeaderProps> = ({
                   }}
                 >
                   <div
-                    className="component-header__fixer__nav-mobile__link__text__text"
+                    className={`component-header__fixer__nav__link__text ${clicked == 'nft' ? 'activeHeader' : ''}`}
                     onClick={() => {
-                      setIsOpen(false);
+                      setIsOpen(false);                      
+                      setClicked('nft')
                       history.push("/event-creator/nft");
                     }}
                   >
@@ -179,17 +182,19 @@ const Header: React.FC<IHeaderProps> = ({
               </div>
               <div className="component-header__fixer__nav-mobile__link">
                 <a
-                  className="component-header__fixer__nav-mobile__link__text"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'flyer'? 'activeHeader' : ''}`}
                   rel="noopener noreferrer"
+                  onClick={()=>{setClicked('flyer')}}
                 >
                   Flyer
                 </a>
               </div>
               <div className="component-header__fixer__nav-mobile__link">
                 <a
-                  className="component-header__fixer__nav-mobile__link__text"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'tickets' ? 'activeHeader': ''}`}
                   rel="noopener noreferrer"
                   onClick={() => {
+                    setClicked('tickets')
                     setIsOpen(false);
                     history.push("/event-creator/tickets");
                   }}
@@ -199,9 +204,10 @@ const Header: React.FC<IHeaderProps> = ({
               </div>
               <div className="component-header__fixer__nav-mobile__link">
                 <a
-                  className="component-header__fixer__nav-mobile__link__text"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'admissions' ? 'activeHeader': ''}`}
                   rel="noopener noreferrer"
                   onClick={() => {
+                    setClicked('admissions')
                     setIsOpen(false);
                     history.push("/event-creator/admissions");
                   }}
@@ -214,8 +220,9 @@ const Header: React.FC<IHeaderProps> = ({
               <div className="component-header__fixer__nav">
                 <div className="component-header__fixer__nav__link">
                   <div
-                    className="component-header__fixer__nav__link__text"
+                    className={`component-header__fixer__nav__link__text ${clicked == 'setup' ? 'activeHeader' : ''}`}
                     onClick={() => {
+                      setClicked("setup")
                       history.push("/event-creator/setup");
                     }}
                   >
@@ -225,8 +232,9 @@ const Header: React.FC<IHeaderProps> = ({
                 <img src={EllipseSvg} alt="" width="10px" />
                 <div className="component-header__fixer__nav__link">
                   <div
-                    className="component-header__fixer__nav__link__text"
+                    className={`component-header__fixer__nav__link__text ${clicked == 'nft' ? 'activeHeader' : ''}`}
                     onClick={() => {
+                      setClicked('nft')
                       history.push("/event-creator/nft");
                     }}
                   >
@@ -235,16 +243,18 @@ const Header: React.FC<IHeaderProps> = ({
                 </div>
                 <img src={EllipseSvg} alt="" width="10px" />
                 <a
-                  className="component-header__fixer__nav__link"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'flyer' ? 'activeHeader': ''}`}
                   rel="noopener noreferrer"
+                  onClick={()=>setClicked('flyer')}
                 >
                   Flyer
                 </a>
                 <img src={EllipseSvg} alt="" width="10px" />
                 <a
-                  className="component-header__fixer__nav__link"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'tickets' ? 'activeHeader': ''}`}
                   rel="noopener noreferrer"
                   onClick={() => {
+                    setClicked('tickets')
                     history.push("/event-creator/tickets");
                   }}
                 >
@@ -252,9 +262,10 @@ const Header: React.FC<IHeaderProps> = ({
                 </a>
                 <img src={EllipseSvg} alt="" width="10px" />
                 <a
-                  className="component-header__fixer__nav__link"
+                  className={`component-header__fixer__nav-mobile__link__text ${clicked == 'admissions' ? 'activeHeader': ''}`}
                   rel="noopener noreferrer"
                   onClick={() => {
+                    setClicked('admissions')
                     history.push("/event-creator/admissions");
                   }}
                 >
