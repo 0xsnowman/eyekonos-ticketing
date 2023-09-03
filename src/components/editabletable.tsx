@@ -79,7 +79,7 @@ const Editabletable: React.FC<IEditableTableProps> = ({
                   }}
                   value={email}
                   required
-                />;
+                />
                 <Button
                   style={{
                     backgroundColor: "blue",

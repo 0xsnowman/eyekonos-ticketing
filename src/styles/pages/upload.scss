@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 1520px;
     display: flex;
+    overflow: auto;
     // justify-content: center;
 
     &__main {

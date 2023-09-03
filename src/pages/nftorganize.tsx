@@ -66,7 +66,7 @@ const treeData: Array<IETreeViewItem> = [
     children: [
       {
         id: "2",
-        label: "NFT Group",
+        label: "*NFT Group*",
         children: [
           {
             id: "3",
@@ -286,7 +286,7 @@ const NFTOrganize = () => {
                       setOpen(true);
                     }}
                   >
-                    <div style= {{fontFamily:"InterBold", fontSize:"20px"}}>Save</div>
+                    <div style={{ fontFamily: "InterBold", fontSize: "20px" }}>Save</div>
                   </Button>
                 </div>
               </div>

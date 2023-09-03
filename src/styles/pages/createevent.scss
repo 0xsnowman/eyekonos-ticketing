@@ -22,6 +22,8 @@
   &__content {
     width: 100%;
     display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
     // justify-content: center;
 
     &__main {

@@ -70,13 +70,13 @@ const AccountAction = () => {
               borderWidth={2}
               hoverable={false}
             >
-              Account Action Required
+               <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Account Action Required</div>
             </Button>
           </div>
           <div className="page-accountaction__content__main__table">
             <div className="page-accountaction__content__main__table__description">
               <div className="page-accountaction__content__main__table__description__content">
-              <p>In order to maintain the integrity of the platform, we require that event creators take responsibility for the events which they create. You must first verify your identity to use our platfom</p>
+              <p style= {{fontFamily:"InterLight", fontSize:"20px"}}>In order to maintain the integrity of the platform, we require that event creators take responsibility for the events which they create. You must first verify your identity to use our platfom</p>
               </div>
             </div>
             <div className="page-accountaction__content__main__table__button">
@@ -89,7 +89,7 @@ const AccountAction = () => {
                 fontSize={22}
                 fontWeight="bold"
               >
-                Continue
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Continue</div>
               </Button>
             </div>
           </div>

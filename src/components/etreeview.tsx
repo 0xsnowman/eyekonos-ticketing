@@ -123,7 +123,7 @@ const CustomTreeItemEx: React.FC<ICustomTreeItem> = styled(TreeItem)(
 const ETreeView: React.FC<IETreeViewProps> = ({
   treeData = [],
   backgroundColor = "transparent",
-  isSideBar = true,
+  isSideBar = false,
 }) => {
   const [windowWidth, setWindowWidth] = useWindowWidth();
   console.log(windowWidth);

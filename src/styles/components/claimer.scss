@@ -3,15 +3,15 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
-  gap: 20px;
+  // gap: 20px;
   width: 100%;
-  padding-top: 6vmin;
+  padding-top: 12vmin;
 
   &__main {
     display: flex;
     justify-content: center;
     // align-items: center;
-    gap: 20px;
+     gap: 20px;
     width: 100%;
     &__svgs {
       display: flex;

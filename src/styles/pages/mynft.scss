@@ -23,6 +23,7 @@
     width: 80%;
     max-width: 1520px;
     display: flex;
+    overflow: auto;
 
     &__main {
       display: flex;

@@ -39,6 +39,7 @@ const Header: React.FC<IHeaderProps> = ({
     console.log(windowWidth);
     if (
       Number(windowWidth) < 500 ||
+      location.pathname.endsWith("") ||
       location.pathname.endsWith("my-events") ||
       location.pathname.endsWith("event-creator") ||
       location.pathname.endsWith("event-creator/new-event") ||
@@ -57,8 +58,9 @@ const Header: React.FC<IHeaderProps> = ({
     else setAddStyle("block")
   }, [windowWidth, location.pathname]);
   return (
-    <div className="component-header" style={{ display: addStyle, height: '100px' }}>
-      <div className="component-header__fixer">
+    <div className="component-header" >    
+     {/* style={{ display: addStyle, height: '100px' }} */}
+      <div className="component-header__fixer" style={{height:"9vmin"}}>
         <div
           className={[
             "component-header__fixer__sidebar",
