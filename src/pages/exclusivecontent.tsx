@@ -48,7 +48,7 @@ const ExclusiveContent = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 cursor: "pointer",
                 marginTop: 5,
               }}

@@ -36,10 +36,9 @@ const Header: React.FC<IHeaderProps> = ({
   const deviceType = useDeviceType();
 
   useEffect(() => {
-    console.log(windowWidth);
+    console.log("windowWidth: ", windowWidth, location.pathname);
     if (
       Number(windowWidth) < 500 ||
-      location.pathname.endsWith("") ||
       location.pathname.endsWith("my-events") ||
       location.pathname.endsWith("event-creator") ||
       location.pathname.endsWith("event-creator/new-event") ||
@@ -51,17 +50,22 @@ const Header: React.FC<IHeaderProps> = ({
     } else if (Number(windowWidth) < 800) {
       setHeaderType("menu_included");
     } else {
-      setHeaderType("side_bar");
+      if (location.pathname === "/") {
+        setHeaderType("menu_included");
+      } else {
+        setHeaderType("side_bar");
+      }
     }
 
     if (location.pathname == '/') setAddStyle("none")
     else setAddStyle("block")
   }, [windowWidth, location.pathname]);
+
   return (
     <div className="component-header" >    
      {/* style={{ display: addStyle, height: '100px' }} */}
       <div className="component-header__fixer" style={{height:"9vmin"}}>
-        <div
+        {headerType === "side_bar" && <div
           className={[
             "component-header__fixer__sidebar",
             location.pathname.endsWith("not-found") ||
@@ -75,7 +79,7 @@ const Header: React.FC<IHeaderProps> = ({
           <div className="component-header__fixer__sidebar__content">
             Tickets (1000 / 5000)
           </div>
-        </div>
+        </div>}
         {!(
           location.pathname.endsWith("/event") ||
           location.pathname.includes("/event/")

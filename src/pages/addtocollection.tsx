@@ -52,8 +52,8 @@ const AddToCollection = () => {
                 style={{
                   backgroundColor: "#102F82",
                   borderRadius: 10,
-                  width: 50,
-                  height: 50,
+                  width: 40,
+                  height: 40,
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
@@ -61,8 +61,7 @@ const AddToCollection = () => {
                   color: "white",
                   padding: 5,
                   marginRight: 30,
-                  marginTop: 5,
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   cursor: "pointer",
                 }}
                 onClick={() => history.goBack()}
@@ -143,7 +142,7 @@ const AddToCollection = () => {
                   color: "white",
                   padding: 5,
                   marginRight: 30,
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   cursor: "pointer",
                 }}
                 onClick={() => {
@@ -233,7 +232,7 @@ const AddToCollection = () => {
                   color: "white",
                   padding: 5,
                   marginRight: 30,
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   cursor: "pointer"
                 }}
                 onClick={() => {

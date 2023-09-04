@@ -92,7 +92,7 @@ const MyEvents = () => {
                 fontWeight: "bold",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 marginTop: 9,
                 cursor: "pointer",
               }}
@@ -249,7 +249,7 @@ const MyEvents = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 border: "1px solid #F0BB51",
                 marginBottom: 20,
                 cursor: "pointer",
@@ -321,7 +321,7 @@ const MyEvents = () => {
                       color: "white",
                       padding: 5,
                       marginRight: 30,
-                      fontFamily: "Inter",
+                      fontFamily: "InterRegular",
                       border: "1px solid #F0BB51",
                       cursor: "pointer",
                     }}
@@ -379,7 +379,7 @@ const MyEvents = () => {
                   >
                     <p
                       style={{
-                        fontFamily: "Inter",
+                        fontFamily: "InterRegular",
                       }}
                     >
                       Event - <br />
@@ -477,7 +477,7 @@ const MyEvents = () => {
                           color: "white",
                           padding: 5,
                           marginRight: 30,
-                          fontFamily: "Inter",
+                          fontFamily: "InterRegular",
                           border: "1px solid #F0BB51",
                           cursor: "pointer",
                         }}
@@ -548,7 +548,7 @@ const MyEvents = () => {
                                 fontSize: 20,
                                 padding: 10,
                                 borderRight: "1px solid #102F82",
-                                fontFamily: "Inter",
+                                fontFamily: "InterRegular",
                               }}
                             >
                               <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>(#123-ticket-number) ticket-class-name</div>
@@ -564,7 +564,7 @@ const MyEvents = () => {
                                 fontSize: 20,
                                 padding: 10,
                                 borderLeft: "1px solid #102F82",
-                                fontFamily: "Inter",
+                                fontFamily: "InterRegular",
                               }}
                             >
                               <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>(#123-ticket-number) ticket-class-name</div>
@@ -609,7 +609,7 @@ const MyEvents = () => {
                             fontSize: 20,
                             padding: 10,
                             borderRight: "1px solid #102F82",
-                            fontFamily: "Inter",
+                            fontFamily: "InterRegular",
                           }}
                         >
                           (#123-ticket-number) ticket-class-name
@@ -625,7 +625,7 @@ const MyEvents = () => {
                             fontSize: 20,
                             padding: 10,
                             borderLeft: "1px solid #102F82",
-                            fontFamily: "Inter",
+                            fontFamily: "InterRegular",
                           }}
                         >
                           (#123-ticket-number) ticket-class-name

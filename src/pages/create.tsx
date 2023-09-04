@@ -74,7 +74,7 @@ const Create = (props: any) => {
               style={{
                 color: "#102F82",
                 textAlign: "center",
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 fontSize: 32,
                 fontStyle: "normal",
                 fontWeight: 600,
@@ -131,7 +131,7 @@ const Create = (props: any) => {
                     color: "white",
                     padding: 5,
                     marginRight: "11%",
-                    fontFamily: "Inter",
+                    fontFamily: "InterRegular",
                     cursor: "pointer",
                   }}
                   onClick={() => {

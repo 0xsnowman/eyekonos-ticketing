@@ -56,7 +56,7 @@ const SectionSeating = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 cursor: "pointer",
               }}
               onClick={() => history.goBack()}
@@ -67,7 +67,7 @@ const SectionSeating = () => {
               <span style={{
                 color: "#000",
                 textAlign: "center",
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 fontSize: "32px",
                 fontStyle: "normal",
                 fontWeight: "700",
@@ -78,7 +78,7 @@ const SectionSeating = () => {
                 <span style={{
                   color: "#06F",
                   textAlign: "center",
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   fontSize: "24px",
                   fontStyle: "normal",
                   fontWeight: "700",

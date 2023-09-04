@@ -67,9 +67,9 @@ const App: React.FC = () => {
             <Route exact path="/">
               <Claim />
             </Route>
-            <Route exact path="/account">
+            {/* <Route exact path="/account">
               <AccountSettings />
-            </Route>
+            </Route> */}
             <Route exact path="/event-creator/new-event">
               <EventDetails />
             </Route>

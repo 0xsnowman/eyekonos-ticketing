@@ -139,7 +139,7 @@ const Button: React.FC<IButtonProps> = ({
               color: color,
               fontSize: fontSize,
               fontWeight: fontWeight,
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             {children}

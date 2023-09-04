@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center;
     // align-items: center;
-     gap: 20px;
+    padding-top: 5vmin;
+    gap: 20px;
     width: 100%;
     &__svgs {
       display: flex;
@@ -26,8 +27,8 @@
     }
 
     &__corner-cut-rectangle {
-      width: 50vmin;
-      height: 50vmin;
+      width: 45vmin;
+      height: 45vmin;
       background-color: #102f82;
       position: relative;
       display: flex;

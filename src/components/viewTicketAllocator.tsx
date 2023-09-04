@@ -228,7 +228,7 @@ const ViewTicketAllocator: React.FC<IViewTicketAllocatorProps> = ({
           fontWeight: "bold",
           padding: 0,
           marginRight: 30,
-          fontFamily: "Inter",
+          fontFamily: "InterRegular",
           marginTop: 9,
           cursor: "pointer",
           position: "absolute",

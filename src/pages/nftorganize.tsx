@@ -124,7 +124,7 @@ const NFTOrganize = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 cursor: "pointer",
               }}
               onClick={() => history.goBack()}
@@ -145,7 +145,7 @@ const NFTOrganize = () => {
               <div
                 style={{
                   fontSize: 24,
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   fontWeight: "bold",
                 }}
               >

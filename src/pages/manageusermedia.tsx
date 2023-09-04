@@ -56,7 +56,7 @@ const ManageUserMedia = () => {
                 color: "#F0E051",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 cursor: "pointer",
               }}
               onClick={() => {

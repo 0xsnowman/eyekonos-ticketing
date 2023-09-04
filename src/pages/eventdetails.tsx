@@ -103,7 +103,7 @@ const EventDetails = () => {
                 color="white"
                 fontSize={22}
                 fontWeight="bold"
-                merchandiseTop={-27}
+                merchandiseTop={-30}
               >
                 Add individual Seating
               </SpinButton>

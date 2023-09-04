@@ -35,11 +35,11 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         max-width: 1520px;
-        margin: 30px; 
+        margin: 30px;
 
-        @media only screen and (max-width: 2200px) {
+        @media only screen and (max-width: 2600px) {
           width: 50%;
         }
 
@@ -48,7 +48,6 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
-          gap: 40px;
 
           &__twobtns {
             display: flex;
@@ -61,25 +60,25 @@
             #croba-mint {
               position: absolute;
               left: 100px;
-              top: 0px;
+              top: 50px;
             }
 
             #croba-widthdraw {
               position: absolute;
               left: 100px;
-              top: 320px;
+              top: 370px;
             }
 
             #croba-create {
               position: absolute;
               left: -100px;
-              top: 140px;
+              top: 190px;
             }
 
             #croba-import {
               position: absolute;
               left: 260px;
-              top: 140px;
+              top: 190px;
             }
           }
 

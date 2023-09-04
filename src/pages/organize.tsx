@@ -28,8 +28,8 @@ const Organize = () => {
     >
       <div className="page-organize__content">
         <div className="page-organize__content__main">
-          <span style={{fontSize:"24px"}}>23 Minted</span>
-          <span style={{fontSize:"24px"}}>7/23 Claimed</span>
+          <span>23 Minted</span>
+          <span>7/23 Claimed</span>
           <div style={{ padding: 5 }}></div>
           <Button
             borderRadius
@@ -74,6 +74,7 @@ const Organize = () => {
           >
             <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>OpenSea Display Page</div>
           </Button>
+          <div className="page-organize__content__main__footer"></div>
         </div>
       </div>
     </div>

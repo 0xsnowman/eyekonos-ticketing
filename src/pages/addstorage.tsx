@@ -53,7 +53,7 @@ const AddStorage = () => {
                   color: "white",
                   padding: 5,
                   marginRight: 30,
-                  fontFamily: "Inter",
+                  fontFamily: "InterRegular",
                   cursor: "pointer",
                   backgroundColor: "#253F9A",
                 }}
@@ -125,7 +125,7 @@ const AddStorage = () => {
                 <div
                   style={{
                     color: "#06F",
-                    fontFamily: "Inter",
+                    fontFamily: "InterRegular",
                     fontSize: 24,
                     fontStyle: "normal",
                     fontWeight: 700,

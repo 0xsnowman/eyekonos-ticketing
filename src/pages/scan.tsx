@@ -52,7 +52,7 @@ const Scan = () => {
                 color: "#F0BB51",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
                 cursor: "pointer",
               }}
               onClick={() => {

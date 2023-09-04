@@ -168,7 +168,7 @@ const SpinButton: React.FC<ISpinButtonProps> = ({
         <div
           className="molecule-spinbutton__price"
           style={{
-            marginTop: merchandiseTop - 25,
+            marginTop: merchandiseTop - 28,
             fontSize: 22,
           }}
         >

@@ -66,7 +66,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
           <span
             style={{
               color: "white",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             Odds of getting an NFT for each ticket
@@ -121,7 +121,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               padding: 0,
               marginRight: 30,
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
               marginTop: 9,
               cursor: "pointer",
               position: "absolute",
@@ -166,7 +166,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               fontSize: 18,
               color: "white",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             <span>Single</span>
@@ -191,7 +191,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
                 fontWeight: "bold",
                 fontSize: 16,
                 color: "white",
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
               }}
             >
               Tickets #
@@ -219,7 +219,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
                 fontWeight: "bold",
                 fontSize: 16,
                 color: "white",
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
               }}
             >
               to
@@ -246,7 +246,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
           <span
             style={{
               color: "#F0E051",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             Error: Overlaps existing allocation to #*range-start* - #*range end*{" "}
@@ -285,7 +285,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               padding: 0,
               marginRight: 30,
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
               marginTop: 9,
               cursor: "pointer",
               position: "absolute",
@@ -330,7 +330,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               fontSize: 18,
               color: "white",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
               minHeight: 200,
             }}
           >
@@ -368,7 +368,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               padding: 0,
               marginRight: 30,
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
               marginTop: 9,
               cursor: "pointer",
               position: "absolute",
@@ -413,7 +413,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               fontSize: 18,
               color: "white",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             <span>Single</span>
@@ -438,7 +438,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
                 fontWeight: "bold",
                 fontSize: 16,
                 color: "white",
-                fontFamily: "Inter",
+                fontFamily: "InterRegular",
               }}
             >
               Tickets #
@@ -465,7 +465,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
           <span
             style={{
               color: "#F0E051",
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
             }}
           >
             Error: Overlaps existing allocation to #*range-start* - #*range end*{" "}
@@ -506,7 +506,7 @@ const NFTDistributionSelector: React.FC<INFTDistributionSelectorProps> = ({
               fontWeight: "bold",
               padding: 0,
               marginRight: 30,
-              fontFamily: "Inter",
+              fontFamily: "InterRegular",
               marginTop: 9,
               cursor: "pointer",
               position: "absolute",

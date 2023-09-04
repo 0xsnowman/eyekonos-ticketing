@@ -35,8 +35,12 @@
       max-width: 1520px;
       padding-top: 50px;
 
+      &__footer {
+        padding: 10vmin;
+      }
+
       span {
-        font-family: "InterLight";
+        font-family: "InterBold";
         font-weight: bold;
         font-size: 22px;
         color: #102f82;
