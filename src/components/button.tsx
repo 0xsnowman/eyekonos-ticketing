@@ -16,17 +16,17 @@ interface IButtonProps {
   fontSize?: number | string;
   fontWeight?: string;
   borderRadius?: boolean;
-  borderRadiusAmount?: number;
-  paddingVertical?: number;
+  borderRadiusAmount?: number | string;
+  paddingVertical?: number | string;
   paddingVerticalOutside?: number;
-  paddingHorizontal?: number;
+  paddingHorizontal?: number | string;
   color?: string;
   borderColor?: string;
-  borderWidth?: number;
+  borderWidth?: number | string;
   borderOutside?: boolean;
   borderOutsideColor?: string;
   hoverable?: boolean;
-  marginOutside?: number;
+  marginOutside?: number | string;
 }
 
 const Button: React.FC<IButtonProps> = ({
@@ -36,26 +36,26 @@ const Button: React.FC<IButtonProps> = ({
   disabled,
   fixedWidth = false,
   fixedHeight = false,
-  width = 160,
-  height = 120,
+  width = "16vmin",
+  height = "12vmin",
   minWidth = "initial",
-  fontSize = 18,
+  fontSize = "2vmin",
   fontWeight = "normal",
   oneTimeButton,
   border = false,
   insideBorderDirection = "HORIZONTAL",
   borderRadius = false,
-  borderRadiusAmount = 19,
-  paddingVertical = 30,
-  paddingVerticalOutside = 3,
-  paddingHorizontal = 20,
+  borderRadiusAmount = "2vmin",
+  paddingVertical = "3vmin",
+  paddingVerticalOutside = "0.5vmin",
+  paddingHorizontal = "1vmin",
   color = "#F0BB51",
   borderColor = "#F0BB51",
   borderWidth = 1,
   borderOutside = false,
   borderOutsideColor = "#F0BB51",
   hoverable = true,
-  marginOutside = 15,
+  marginOutside = "1.5vmin",
 }) => {
   const [isHover, setIsHover] = React.useState(false);
   const [localDisabled, setLocalDisabled] = React.useState(false);
@@ -86,7 +86,7 @@ const Button: React.FC<IButtonProps> = ({
         boxShadow:
           isHover && !borderOutside && hoverable
             ? `0 0 2px 2px ${backgroundColor}, 0 0 6px 6px #F0BB51FF`
-            : "0px 0px 20px transparent",
+            : "0px 0px 2vmin transparent",
         textAlign: `center`,
         paddingTop: borderOutside ? 0 : paddingVerticalOutside,
         paddingBottom: borderOutside ? 0 : paddingVerticalOutside,
@@ -105,22 +105,22 @@ const Button: React.FC<IButtonProps> = ({
         style={{
           borderTop:
             border && insideBorderDirection === "HORIZONTAL"
-              ? `${borderWidth}px solid ${borderColor}`
+              ? `${borderWidth} solid ${borderColor}`
               : "0px",
           borderBottom:
             border && insideBorderDirection === "HORIZONTAL"
-              ? `${borderWidth}px solid ${borderColor}`
+              ? `${borderWidth} solid ${borderColor}`
               : "0px",
           borderLeft:
             border && insideBorderDirection === "VERTICAL"
-              ? `${borderWidth}px solid ${borderColor}`
+              ? `${borderWidth} solid ${borderColor}`
               : "0px",
           borderRight:
             border && insideBorderDirection === "VERTICAL"
-              ? `${borderWidth}px solid ${borderColor}`
+              ? `${borderWidth} solid ${borderColor}`
               : "0px",
-          paddingTop: borderOutside ? 0 : paddingVertical - 3,
-          paddingBottom: borderOutside ? 0 : paddingVertical - 3,
+          paddingTop: paddingVertical,
+          paddingBottom: paddingVertical,
           paddingLeft: paddingHorizontal,
           paddingRight: paddingHorizontal,
           marginLeft: marginOutside,

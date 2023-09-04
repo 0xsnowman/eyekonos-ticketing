@@ -2,32 +2,33 @@
     position: relative;
     &__inside {
         width: 100%;
-        border-top-width: 2px;
+        border-top-width: 0.2vmin;
         border-top-color: #F0BB51;
-        border-bottom-width: 2px;
+        border-bottom-width: 0.2vmin;
         border-bottom-color: #F0BB51;
     }
 
     &__pinimg {
         position: absolute;
-        right: -77px;
-        top: 5px;
+        right: -9vmin;
+        top: 2vmin;
+        width: 12vmin;
     }
 
     &__dot {
         position: absolute;
-        width: 10px;
-        height: 10px;
-        border-radius: 20px;
+        width: 1vmin;
+        height: 1vmin;
+        border-radius: 2vmin;
         background-color: #142252;
-        margin-top: -28px;
-        right: 10px;
+        margin-top: -2.8vmin;
+        right: 1vmin;
     }
 
     &__price {
         position: absolute;
-        margin-top: -35px;
-        right: -35px;
+        margin-top: -3.5vmin;
+        right: -3.5vmin;
         color: #F0E051;
         font-family: 'InterBold';
     }
@@ -35,17 +36,17 @@
     &__pricenot {
         position: absolute;
         margin-top: 0px;
-        right: -35px;
+        right: -3.5vmin;
         color: #F0E051;
         font-family: 'InterBold';
     }
 
     &__extraprice {
         position: absolute;
-        margin-top: -42px;
-        right: -70px;
+        margin-top: -4.2vmin;
+        right: -7vmin;
         color: #F0BB51;
-        font-size: 13px;
+        font-size: 1.3vmin;
         font-family: 'InterBold';
         text-decoration: line-through;
     }
