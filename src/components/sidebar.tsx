@@ -74,7 +74,10 @@ const SideBar = () => {
   const [addStyle, setAddStyle] = useState('')
 
   useEffect(()=>{
-    if(location.pathname == "/") setAddStyle("none")
+    if(location.pathname == "/"
+     || location.pathname.endsWith("/event-creator/new-event")
+     || location.pathname.endsWith("/event-creator/create-event")
+    ) setAddStyle("none")
     else setAddStyle("block")
   }, [location])
 

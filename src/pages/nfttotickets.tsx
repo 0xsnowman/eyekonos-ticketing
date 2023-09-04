@@ -126,11 +126,15 @@ const NFTToTickets = () => {
                     paddingVertical={9}
                     borderRadiusAmount={10}
                     borderRadius
+                    fixedWidth
+                    width={50}
+                    paddingHorizontal={5}
                   >
                     <img
                       src={FolderPlusSvg}
                       style={{
                         height: 16,
+                        width: 16,
                       }}
                     />
                   </Button>

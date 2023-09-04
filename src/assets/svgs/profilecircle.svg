@@ -1,0 +1,16 @@
+<svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconsax/Linear/profilecircle">
+<path id="Vector" d="M35.855 37.8075C35.6192 37.7779 35.3807 37.7779 35.145 37.8075C32.6361 37.7231 30.2584 36.6667 28.514 34.8616C26.7696 33.0565 25.7952 30.644 25.7966 28.1338C25.7966 22.7792 30.1158 18.4304 35.5 18.4304C38.0425 18.426 40.4849 19.4209 42.3006 21.2006C44.1164 22.9803 45.1601 25.4023 45.2067 27.9444C45.2532 30.4865 44.299 32.9451 42.5496 34.7901C40.8003 36.6351 38.3959 37.7188 35.855 37.8075ZM55.4391 57.3325C50.0025 62.3294 42.8841 65.0965 35.5 65.0833C27.8083 65.0833 20.8266 62.1546 15.5608 57.3325C15.8566 54.5517 17.6316 51.83 20.797 49.7C28.9029 44.3158 42.1562 44.3158 50.2029 49.7C53.3683 51.83 55.1433 54.5517 55.4391 57.3325Z" stroke="url(#paint0_linear_500_90)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M35.5001 65.0834C51.839 65.0834 65.0834 51.8389 65.0834 35.5C65.0834 19.1611 51.839 5.91669 35.5001 5.91669C19.1612 5.91669 5.91675 19.1611 5.91675 35.5C5.91675 51.8389 19.1612 65.0834 35.5001 65.0834Z" stroke="url(#paint1_linear_500_90)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_500_90" x1="35.5" y1="18.4304" x2="35.5" y2="65.0834" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0E051"/>
+<stop offset="1" stop-color="#F0BB51"/>
+</linearGradient>
+<linearGradient id="paint1_linear_500_90" x1="35.5001" y1="5.91669" x2="35.5001" y2="65.0834" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0E051"/>
+<stop offset="1" stop-color="#F0BB51"/>
+</linearGradient>
+</defs>
+</svg>

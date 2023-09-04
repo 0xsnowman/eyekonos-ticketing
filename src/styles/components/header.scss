@@ -2,8 +2,6 @@
 
 .component-header {
   background-color: #102f82;
-  // position: fixed;
-  // left: 0px;
   top: 0px;
   left: 0px;
   z-index: 101;
@@ -15,10 +13,11 @@
 
   &__fixer {
     position: fixed;
-    height: 10vmin;
+    height: 9vmin;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #102f82;
 
     &__sidebar {
@@ -97,6 +96,14 @@
 
     &__logo {
       height: 8vmin;
+      cursor: pointer;
+    }
+
+    &__profile {
+      width: 7vmin;
+      height: 7vmin;
+      padding-right: 1vmin;
+      cursor: pointer;
     }
 
     &__nav-mobile {
@@ -296,17 +303,6 @@
         color: #f3135c;
         cursor: pointer;
         text-decoration: none;
-        // border: 2px solid #f3135c;
-        // background-color: transparent;
-        // border-radius: 30px;
-        // padding: 10px;
-        // color: white;
-        // cursor: pointer;
-        // transition: $t-transition;
-
-        // &:hover {
-        //   background-color: #f3135c;
-        // }
       }
     }
   }

@@ -3,7 +3,7 @@
 .page-eventdetails {
   display: flex;
   justify-content: center;
-  width: 75%;
+  width: 100%;
   overflow-y: scroll;
   max-height: 100vh;
 
@@ -37,7 +37,7 @@
 
       &__svg {
         position: absolute;
-        left: calc(25% + 3vmin);
+        left: calc(3vmin);
         bottom: 0%;
         @media only screen and (max-width: 960px) {
           display: none;
