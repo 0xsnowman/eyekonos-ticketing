@@ -22,6 +22,7 @@
   &__content {
     width: 100%;
     display: flex;
+    overflow: auto;
     // justify-content: center;
 
     &__main {

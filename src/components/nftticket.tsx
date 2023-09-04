@@ -22,7 +22,7 @@ const NftTicket: React.FC<INftTicketProps> = ({
   return status === "known" ? (
     <div className={["nft-ticket", type].join(" ")} onClick={() => {
       onClickFunction()
-    }}>
+    }} style={{width:'auto'}}>
       <div className="nft-ticket__name">
         <div className="nft-ticket__name__inside">
           <span>Event Name</span>
@@ -36,7 +36,7 @@ const NftTicket: React.FC<INftTicketProps> = ({
       )}
       {check && (
         <div className="nft-ticket__checkmark">
-          <img src={CheckSvg} width={100} />
+          <img src={CheckSvg} width={40} />
         </div>
       )}
       {!check && (

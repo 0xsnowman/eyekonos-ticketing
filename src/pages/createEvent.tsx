@@ -59,7 +59,7 @@ const CreateEvent = () => {
                 color: "white",
                 padding: 5,
                 marginRight: 30,
-                fontFamily: "Inter",
+                fontFamily: "InterBold",
                 cursor: "pointer",
               }}
               onClick={() => history.goBack()}
@@ -80,7 +80,7 @@ const CreateEvent = () => {
                 width={400}
                 hoverable={false}
               >
-                Event Details
+                <div style={{fontFamily:"InterBold", fontSize:'28px'}}>Event Details</div>
               </Button>
             )}
             {stage === "summary" && (

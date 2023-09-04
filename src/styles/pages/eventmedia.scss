@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 75%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   // max-height: 100vh;
 
   // @media only screen and (min-width: 1520px) {
@@ -20,9 +20,10 @@
   // }
 
   &__content {
-    width: 80%;
+    width: 100%;
     max-width: 1520px;
     display: flex;
+    overflow: auto;
 
     &__main {
       display: flex;
@@ -43,6 +44,7 @@
         &.spread {
           width: 100%;
         }
+
         display: flex;
         gap: 50px;
 
@@ -51,8 +53,7 @@
           gap: 20px;
         }
 
-        &__previewticket {
-        }
+        &__previewticket {}
 
         &__nft-filter {
           width: 100%;
@@ -120,7 +121,7 @@
             }
 
             &.collapse {
-              height: 360px;
+              height: 200px;
             }
 
             @media only screen and (max-width: 1520px) {
@@ -160,8 +161,7 @@
           gap: 20px;
         }
 
-        &__previewticket {
-        }
+        &__previewticket {}
 
         &__nft-filter {
           width: 100%;
@@ -239,7 +239,7 @@
             }
 
             &.collapse {
-              height: 360px;
+              height: 200px;
               justify-content: flex-start;
             }
 
@@ -277,6 +277,7 @@
         position: absolute;
         left: calc(25% + 3vmin);
         bottom: 0%;
+
         @media only screen and (max-width: 960px) {
           display: none;
         }

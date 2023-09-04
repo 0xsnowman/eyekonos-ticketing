@@ -129,7 +129,7 @@ const TicketDesign = () => {
                 fontWeight="bold"
                 hoverable={false}
               >
-                Ticket Design
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Ticket Design</div>
               </Button>
               <Button
                 borderRadius
@@ -139,7 +139,7 @@ const TicketDesign = () => {
                 fontWeight="bold"
                 hoverable={false}
               >
-                All Tickets
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>All Tickets</div>
               </Button>
               <Button
                 borderRadius
@@ -148,9 +148,10 @@ const TicketDesign = () => {
                 color="white"
                 fontWeight="bold"
                 fixedWidth
-                width={150}
+                width={200}
+                marginOutside={20}
               >
-                Upload Image+
+                <div style= {{fontFamily:"InterBold", fontSize:"15px"}}>Upload Image +</div>
               </Button>
             </div>
             <div style={{ width: 100 }}></div>
@@ -476,7 +477,7 @@ const TicketDesign = () => {
                 fontSize={22}
                 fontWeight="bold"
               >
-                Save
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Save</div>
               </Button>
             </div>
           </div>

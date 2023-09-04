@@ -113,7 +113,7 @@ const MyEvents = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                {myEventTitle}
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>{myEventTitle}</div>
               </Button>
 
               {!selectEventShow && (
@@ -127,7 +127,7 @@ const MyEvents = () => {
                       setOpen(true);
                     }}
                   >
-                    {open ? `Claim Ticket` : `Redeem Ticket`}
+                    <div style= {{fontFamily:"InterLight", fontSize:"24px"}}>{open ? `Claim Ticket` : `Redeem Ticket`}</div>
                   </Button>
                   <Button
                     borderRadius
@@ -139,7 +139,7 @@ const MyEvents = () => {
                       setMyEventTitle("My Events - Transfer Ticket");
                     }}
                   >
-                    Transfer Ticket
+                    <div style= {{fontFamily:"InterLight", fontSize:"24px"}}>Transfer Ticket</div>
                   </Button>
                 </div>
               )}
@@ -153,7 +153,7 @@ const MyEvents = () => {
                     fixedWidth
                     width={"50%"}
                   >
-                    Select Event
+                    <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Select Event</div>
                   </Button>
                   <Button
                     borderRadius
@@ -357,7 +357,7 @@ const MyEvents = () => {
                     insideBorderDirection="HORIZONTAL"
                     hoverable={false}
                   >
-                    Ticket Details
+                    <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Ticket Details</div>
                   </Button>
                   <Button
                     border
@@ -505,7 +505,7 @@ const MyEvents = () => {
                       borderOutside
                       borderOutsideColor="#F0BB51"
                     >
-                      Select Ticket
+                      <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Select Ticket</div>
                     </Button>
                   </div>
                   {!ticketSelected &&
@@ -551,7 +551,7 @@ const MyEvents = () => {
                                 fontFamily: "Inter",
                               }}
                             >
-                              (#123-ticket-number) ticket-class-name
+                              <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>(#123-ticket-number) ticket-class-name</div>
                             </div>
                             <div
                               style={{
@@ -567,7 +567,7 @@ const MyEvents = () => {
                                 fontFamily: "Inter",
                               }}
                             >
-                              (#123-ticket-number) ticket-class-name
+                              <div style= {{fontFamily:"InterLight", fontSize:"18px"}}>(#123-ticket-number) ticket-class-name</div>
                             </div>
                           </div>
                         </Button>

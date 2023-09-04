@@ -75,7 +75,7 @@ const Print = () => {
               borderWidth={2}
               hoverable={false}
             >
-              Print to PDF
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Print to PDF</div>
             </Button>
           </div>
           <div className="page-print__content__main__options">
@@ -90,7 +90,7 @@ const Print = () => {
               width={180}
               fixedWidth
             >
-              New +
+              <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>New +</div>
             </Button>
             <ESearchView />
           </div>

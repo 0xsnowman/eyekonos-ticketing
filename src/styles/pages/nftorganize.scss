@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 1520px;
     display: flex;
+    overflow: auto;
     // justify-content: center;
 
     &__main {
@@ -46,7 +47,7 @@
         }
 
         &__treeview {
-          min-width: 240px;
+          min-width: 280px;
           background-color: #102F82;
           padding-right: 5px;
           padding-left: 5px;
@@ -78,6 +79,7 @@
 
             &__button {
               flex: 1;
+              width: 98px;
             }
 
             &__select1 {
@@ -96,13 +98,13 @@
           &__content {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 60px;
-            max-height: calc(100vh - 200px);
+            grid-gap: 20px;
+            max-height: calc(100vh - 400px);
             overflow-y: scroll;
             overflow-x: hidden;
 
             @media only screen and (max-width: 1520px) {
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
             }
           }
 

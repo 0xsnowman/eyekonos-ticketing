@@ -73,7 +73,7 @@ const EventType = () => {
                 borderWidth={2}
                 hoverable={false}
               >
-                Event#1
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Event#1</div>
               </Button>
 
               <div className="page-eventtype__content__main__buttons__right__twobtns">

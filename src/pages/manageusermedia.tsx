@@ -75,7 +75,7 @@ const ManageUserMedia = () => {
               borderWidth={2}
               hoverable={false}
             >
-              Manage User Media
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Manage User Media</div>
             </Button>
           </div>
           <div className="page-manageusermedia__content__main__options">

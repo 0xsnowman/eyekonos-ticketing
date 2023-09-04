@@ -78,7 +78,7 @@ const SpecificTicketNFTs = () => {
               width={600}
               hoverable={false}
             >
-              Preview - Specific Ticket NFT's
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Preview - Specific Ticket NFT's</div>
             </Button>
             <div style={{ width: 100 }}></div>
           </div>
@@ -112,22 +112,22 @@ const SpecificTicketNFTs = () => {
                     }}
                   >
                     <div>
-                      <span>
+                      <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>
                         Add the ability to distribute NFT’s to specific
                         individual tickets
                       </span>
                     </div>
                     <div>
-                      <span>-Specific Seats - First Ticket</span>
+                      <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>-Specific Seats - First Ticket</span>
                     </div>
                     <div>
-                      <span>-Purchased - First Ticket Admitted</span>
+                      <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>-Purchased - First Ticket Admitted</span>
                     </div>
                     <div>
-                      <span>-First Ticket Redeemed</span>
+                      <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>-First Ticket Redeemed</span>
                     </div>
                   </div>
-                  <div className="page-specificticketnfts__content__main__table__description__totalprice">
+                  <div className="page-specificticketnfts__content__main__table__description__totalprice" style= {{fontFamily:"InterBold", fontSize:"20px"}}>
                     Total Price - $99
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const SpecificTicketNFTs = () => {
                 fontSize={22}
                 fontWeight="bold"
               >
-                Continue
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Continue</div>
               </Button>
             </div>
           </div>

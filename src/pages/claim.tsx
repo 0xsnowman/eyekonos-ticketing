@@ -25,7 +25,8 @@ const Claim = () => {
   const deviceHeight = useWindowHeight();
 
   return (
-    <div className="molecule-page page-claim" style={{
+    <div className="page-claim" style={{
+      paddingLeft: "20vmin",
       // height: deviceHeight - 90
     }}>
       <Claimer />

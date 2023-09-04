@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ETreeView from "./etreeview";
 import Button from "./button";
 import { useLocation } from "react-router-dom";
@@ -71,21 +71,30 @@ const treeData: Array<IETreeViewItem> = [
 
 const SideBar = () => {
   const location = useLocation();
+  const [addStyle, setAddStyle] = useState('')
+
+  useEffect(()=>{
+    if(location.pathname == "/") setAddStyle("none")
+    else setAddStyle("block")
+  }, [location])
+
   return (
     <div
       className={[
         "side-bar",
         location.pathname.endsWith("not-found") ? "invisible" : "",
       ].join(" ")}
+      style={{display:addStyle, minWidth:"20vmin"}}
     >
       <div className="side-bar__content">
         <ETreeView treeData={treeData} />
       </div>
       <div className="side-bar__add-category">
         <span style={{
-          color: "white",
+          color:  "#F0E051",
           fontSize: "3vmin",
           textAlign: "center",
+          fontFamily:"InterBold"
         }}>Add Category +</span>
       {/* <Button
         color="white"

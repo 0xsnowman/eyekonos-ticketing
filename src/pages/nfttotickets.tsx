@@ -145,7 +145,7 @@ const NFTToTickets = () => {
                   <ESearchView />
                 </div>
               </div>
-              <div className="page-nfttotickets__content__main__nfts__nft-filter__content">
+              <div className="page-nfttotickets__content__main__nfts__nft-filter__content" style={{	gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', padding: '5px'}}>
                 <NftTicket
                   onClickFunction={() => {
                     setViewOpen(true);

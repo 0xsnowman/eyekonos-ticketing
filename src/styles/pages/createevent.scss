@@ -22,6 +22,8 @@
   &__content {
     width: 100%;
     display: flex;
+    overflow-y: scroll;
+    overflow-x: scroll;
     // justify-content: center;
 
     &__main {
@@ -54,7 +56,7 @@
         align-items: center;
         max-width: 1520px;
         margin: 30px;
-        font-family: "Inter";
+        font-family: "InterBold";
       }
 
       &__table {
@@ -101,7 +103,7 @@
               color: white;
               font-size: 25px;
               font-weight: bold;
-              font-family: "Inter";
+              font-family: "InterBold";
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -162,7 +164,7 @@
       }
 
       span {
-        font-family: "InterLight";
+        font-family: "InterBold";
       }
 
       a {

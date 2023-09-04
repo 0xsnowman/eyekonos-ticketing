@@ -16,6 +16,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: auto;
 
     @media only screen and (min-width: 1080px) {
       width: 100%;

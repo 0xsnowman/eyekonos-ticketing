@@ -36,8 +36,8 @@ const Button: React.FC<IButtonProps> = ({
   disabled,
   fixedWidth = false,
   fixedHeight = false,
-  width = 100,
-  height = 100,
+  width = 160,
+  height = 120,
   minWidth = "initial",
   fontSize = 18,
   fontWeight = "normal",
@@ -48,7 +48,7 @@ const Button: React.FC<IButtonProps> = ({
   borderRadiusAmount = 19,
   paddingVertical = 30,
   paddingVerticalOutside = 3,
-  paddingHorizontal = "initial",
+  paddingHorizontal = 20,
   color = "#F0BB51",
   borderColor = "#F0BB51",
   borderWidth = 1,
@@ -98,6 +98,7 @@ const Button: React.FC<IButtonProps> = ({
         justifyContent: borderOutside ? "center" : "initial",
         alignItems: borderOutside ? "center" : "initial",
         minWidth: minWidth,
+        fontFamily : "InterBold"
       }}
     >
       <div

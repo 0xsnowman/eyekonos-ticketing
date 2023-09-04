@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 75%;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   // max-height: 100vh;
 
   // @media only screen and (min-width: 1520px) {
@@ -20,10 +20,12 @@
   // }
 
   &__content {
-    width: 80%;
+    width: 100%;
     max-width: 1520px;
     display: flex;
+    overflow:auto;
     // justify-content: center;
+    
 
     &__main {
       display: flex;
@@ -33,11 +35,12 @@
       text-align: center;
       padding-left: 30px;
       padding-right: 30px;
+     
 
       &__nfts {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         gap: 50px;
 
         @media only screen and (max-width: 1080px) {
@@ -49,7 +52,7 @@
         }
 
         &__nft-filter {
-          width: 100%;
+          width: 65%;
           border-radius: 13px;
           background: rgba(93, 155, 255, 0.6);
           padding: 30px 20px 30px 20px;
@@ -103,7 +106,7 @@
             height: 500px;
 
             @media only screen and (max-width: 1520px) {
-              grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
             }
 
             @media only screen and (max-width: 720px) {

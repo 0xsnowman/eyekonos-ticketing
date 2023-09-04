@@ -21,6 +21,8 @@
 
   &__content {
     width: 60%;
+    margin-bottom: 2vmin;
+    overflow: auto;
 
     @media only screen and (max-width: 1600px) {
       width: 80%;

@@ -21,6 +21,7 @@
   &__content {
     display: flex;
     justify-content: center;
+    overflow: auto;
     // align-items: center;
     width: 100%;
 
@@ -35,7 +36,7 @@
       padding-top: 50px;
 
       span {
-        font-family: "Inter";
+        font-family: "InterLight";
         font-weight: bold;
         font-size: 22px;
         color: #102f82;

@@ -80,7 +80,7 @@ const ManageData = () => {
                 fontWeight="bold"
                 hoverable={false}
               >
-                Manage Data
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Manage Data</div>
               </Button>
               <Button
                 borderRadius
@@ -90,26 +90,26 @@ const ManageData = () => {
                 fontWeight="bold"
                 hoverable={false}
               >
-                0.8 / 1 GB Used
+                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>0.8 / 1 GB Used</div>
               </Button>
 
               <div className="page-managedata__content__main__buttons__description">
                 <div className="page-managedata__content__main__buttons__description__media">
                   <div className="page-managedata__content__main__buttons__description__media__inside">
-                    <span>User Media</span>
-                    <span>(~87.5%)</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>User Media</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>(~87.5%)</span>
                   </div>
                 </div>
                 <div className="page-managedata__content__main__buttons__description__detail">
                   <div className="page-managedata__content__main__buttons__description__detail__body">
-                    <span>~0.7 GB used</span>
-                    <span>~0.8 GB max</span>
-                    <span>15.3 MB ~ x% &nbsp; / &nbsp; user avg</span>
-                    <span>30MB ~ x% &nbsp; / &nbsp; user max</span>
-                    <span>~3MB ~ x% &nbsp; / &nbsp; user max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>~0.7 GB used</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>~0.8 GB max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>15.3 MB ~ x% &nbsp; / &nbsp; user avg</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>30MB ~ x% &nbsp; / &nbsp; user max</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>~3MB ~ x% &nbsp; / &nbsp; user max</span>
                   </div>
                   <div className="page-managedata__content__main__buttons__description__detail__title">
-                    <span>≈ 87.5% ≈ 0.7GB</span>
+                    <span style= {{fontFamily:"InterLight", fontSize:"20px"}}>≈ 87.5% ≈ 0.7GB</span>
                   </div>
                 </div>
               </div>
@@ -122,12 +122,12 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/user-uploads");
                   }}
                 >
-                  User Uploads
+                  <div style= {{fontFamily:"InterBold", fontSize:"24px"}}>User Uploads</div>
                 </Button>
                 <Button
                   borderRadius
@@ -136,12 +136,12 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/upload-limits");
                   }}
                 >
-                  Upload Limits
+                  <div style= {{fontFamily:"InterBold", fontSize:"24px"}}>Upload Limits</div>
                 </Button>
                 <Button
                   borderRadius
@@ -150,12 +150,12 @@ const ManageData = () => {
                   fontSize={22}
                   color="white"
                   fontWeight="bold"
-                  backgroundColor="#0066FF"
+                  backgroundColor="linear-gradient(180deg, #253F9A 0%, #061B66 100%)"
                   onClick={() => {
                     history.push("/event-creator/setup/media/add-storage");
                   }}
                 >
-                  Add Storage +
+                  <div style= {{fontFamily:"InterBold", fontSize:"24px"}}>Add Storage +</div>
                 </Button>
               </div>
             </div>

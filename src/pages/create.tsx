@@ -35,9 +35,11 @@ const Create = (props: any) => {
   return (
     <div
       className="molecule-page page-create"
-      style={{
-        // height: deviceHeight - 90,
-      }}
+      style={
+        {
+          // height: deviceHeight - 90,
+        }
+      }
     >
       <div className="page-create__content">
         {noData === "no" && (
@@ -51,7 +53,7 @@ const Create = (props: any) => {
                 color="white"
                 hoverable={false}
               >
-                New Event +
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>New Event +</div>
               </Button>
               <div
                 style={{
@@ -65,7 +67,7 @@ const Create = (props: any) => {
                 hoverable={false}
                 borderRadiusAmount={12}
               >
-                Collaborations
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>Collaborations</div>
               </Button>
             </div>
             <span
@@ -105,15 +107,18 @@ const Create = (props: any) => {
                   backgroundColor="#102F82"
                   borderRadiusAmount={10}
                   fontWeight="bold"
+                  fixedWidth
+                  width="50%"
                   onClick={() => {
                     history.push("/event-creator/new-event");
                   }}
                 >
-                  New Event +
+                  <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>New Event +</div>
                 </Button>
               )}
               {stage === "collaboration" && (
                 <div
+                  className = "collab-div"
                   style={{
                     backgroundColor: "#102F82",
                     borderRadius: 10,
@@ -125,7 +130,7 @@ const Create = (props: any) => {
                     fontSize: 30,
                     color: "white",
                     padding: 5,
-                    marginRight: 30,
+                    marginRight: "11%",
                     fontFamily: "Inter",
                     cursor: "pointer",
                   }}
@@ -138,7 +143,7 @@ const Create = (props: any) => {
               )}
               <div
                 style={{
-                  width: 65,
+                  width: 10,
                 }}
               ></div>
               <Button
@@ -147,12 +152,14 @@ const Create = (props: any) => {
                 color="white"
                 backgroundColor="#102F82"
                 borderRadiusAmount={10}
-                fontWeight="bold"
+                fontWeight="bold"                
+                fixedWidth
+                width="50%"
                 onClick={() => {
                   setStage("collaboration");
                 }}
               >
-                Collaborations
+                <div style= {{fontFamily:"InterBold", fontSize:"16px"}}>Collaborations</div>
               </Button>
             </div>
             <div className="page-create__content__main-filter__event-filter">

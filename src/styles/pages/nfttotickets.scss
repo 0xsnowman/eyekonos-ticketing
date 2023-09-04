@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 1520px;
     display: flex;
+    overflow:auto;
     // justify-content: center;
 
     &__main {
@@ -87,7 +88,7 @@
             grid-gap: 60px;
             max-height: calc(100vh - 200px);
             overflow-y: scroll;
-            overflow-x: hidden;
+            overflow-x: scroll;
 
             @media only screen and (max-width: 1520px) {
               grid-template-columns: 1fr 1fr;

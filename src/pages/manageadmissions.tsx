@@ -34,12 +34,12 @@ const ManageAdmissions = () => {
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
               history.push("/event-creator/admissions/manage");
           }}>
-            Manage Admissions
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Manage Admissions</div>
           </Button>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
               history.push("/event-creator/admissions/scan");
           }}>
-            Scan QR / Entry Code
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Scan QR / Entry Code</div>
           </Button>
         </div>
       </div>

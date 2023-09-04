@@ -123,7 +123,7 @@ const CustomTreeItemEx: React.FC<ICustomTreeItem> = styled(TreeItem)(
 const ETreeView: React.FC<IETreeViewProps> = ({
   treeData = [],
   backgroundColor = "transparent",
-  isSideBar = true,
+  isSideBar = false,
 }) => {
   const [windowWidth, setWindowWidth] = useWindowWidth();
   console.log(windowWidth);
@@ -133,7 +133,7 @@ const ETreeView: React.FC<IETreeViewProps> = ({
         key={index}
         style={{ position: "relative", backgroundColor: backgroundColor }}
         className="hover-item"
-      >
+      >{console.log('item.childern', item.children)}
         {isSideBar && (
           <CustomTreeItem
             key={index}

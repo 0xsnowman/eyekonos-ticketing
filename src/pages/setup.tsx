@@ -30,31 +30,31 @@ const Setup = () => {
       height: deviceHeight - 90
     }}>
       <div className="page-setup__content">
-        <div className="page-setup__content__main">
+        <div className="page-setup__content__main" style={{paddingTop:"120px"}}>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
             history.push("/event-creator/tickets/settings");
           }}>
-            Settings
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Settings</div>
           </Button>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
             history.push("/event-creator/tickets/design");
           }}>
-            Design
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Design</div>
           </Button>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
             history.push("/event-creator/tickets/manage");
           }}>
-            Edit Ticket Info
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Edit Ticket Info</div>
           </Button>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
             history.push("/event-creator/tickets/print");
           }}>
-            Print to PDF
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Print to PDF</div>
           </Button>
           <Button borderRadius paddingVertical={20} color="#F0BB51" fontWeight="bold" onClick={() => {
             history.push("/event-creator/tickets/extratickets");
           }}>
-            Create Extra Tickets
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create Extra Tickets</div>
           </Button>
         </div>
       </div>

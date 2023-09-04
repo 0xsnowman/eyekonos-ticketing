@@ -74,20 +74,20 @@ const PrintPreview = () => {
               borderWidth={2}
               hoverable={false}
             >
-              {!printReady ? `Print - Preview` : `Print`}
+              <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>{!printReady ? `Print - Preview` : `Print`}</div>
             </Button>
             <div style={{ width: 100 }}></div>
           </div>
           {!printReady && (
             <div className="page-printpreview__content__main__switch">
-              <span>Not Printed</span>
+              <span style= {{fontFamily:"InterBold", fontSize:"20px"}}>Not Printed</span>
               <IOSSwitch
                 uncheckedTrackColor="#102f82"
                 checkedTrackColor="#102f82"
                 uncheckedThumbColor="#D0D0D0"
                 checkedThumbColor="#F0BB51"
               />
-              <span>Printed</span>
+              <span style= {{fontFamily:"InterBold", fontSize:"20px"}}>Printed</span>
             </div>
           )}
           <div className="page-printpreview__content__main__table">
@@ -95,16 +95,16 @@ const PrintPreview = () => {
               <div className="page-printpreview__content__main__table__body">
                 <div className="page-printpreview__content__main__table__body__inside">
                   <ESelectView />
-                  <div className="page-printpreview__content__main__table__body__inside__row">
+                  <div className="page-printpreview__content__main__table__body__inside__row" style= {{fontFamily:"InterBold", fontSize:"20px"}}>
                     Ticket# ... (printed {`>`} 0 times)
                   </div>
-                  <div className="page-printpreview__content__main__table__body__inside__row">
+                  <div className="page-printpreview__content__main__table__body__inside__row" style= {{fontFamily:"InterBold", fontSize:"20px"}}>
                     Ticket# ...{" "}
                   </div>
-                  <div className="page-printpreview__content__main__table__body__inside__row">
+                  <div className="page-printpreview__content__main__table__body__inside__row" style= {{fontFamily:"InterBold", fontSize:"20px"}}>
                     Ticket# ...{" "}
                   </div>
-                  <div className="page-printpreview__content__main__table__body__inside__footer">
+                  <div className="page-printpreview__content__main__table__body__inside__footer" style= {{fontFamily:"InterBold", fontSize:"20px"}}>
                     Total Price - $ ...
                   </div>
                 </div>
@@ -124,7 +124,7 @@ const PrintPreview = () => {
                     setPrintReady(true);
                   }}
                 >
-                  Continue
+                  <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Continue</div>
                 </Button>
               )}
               {printReady && (

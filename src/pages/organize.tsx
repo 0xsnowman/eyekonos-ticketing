@@ -28,8 +28,8 @@ const Organize = () => {
     >
       <div className="page-organize__content">
         <div className="page-organize__content__main">
-          <span>23 Minted</span>
-          <span>7/23 Claimed</span>
+          <span style={{fontSize:"24px"}}>23 Minted</span>
+          <span style={{fontSize:"24px"}}>7/23 Claimed</span>
           <div style={{ padding: 5 }}></div>
           <Button
             borderRadius
@@ -39,8 +39,7 @@ const Organize = () => {
             onClick={() => {
               history.push("/event-creator/nft/manage");
             }}
-          >
-            Create & Manage
+          ><div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create & Manage</div>
           </Button>
           <Button
             borderRadius
@@ -51,7 +50,7 @@ const Organize = () => {
               history.push("/event-creator/nft/organize");
             }}
           >
-            Organize NFTs
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Organize NFTs</div>
           </Button>
           <Button
             borderRadius
@@ -62,7 +61,7 @@ const Organize = () => {
               history.push("/event-creator/nft/allocate");
             }}
           >
-            Ticket Allocation
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Ticket Allocation</div>
           </Button>
           <Button
             borderRadius
@@ -73,7 +72,7 @@ const Organize = () => {
               history.push("/event-creator/nft/opensea");
             }}
           >
-            OpenSea Display Page
+            <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>OpenSea Display Page</div>
           </Button>
         </div>
       </div>
