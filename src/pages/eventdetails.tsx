@@ -42,6 +42,8 @@ const EventDetails = () => {
               <SlugLinkButton
                 border
                 borderRadius
+                fixedWidth
+                width={"60vmin"}
                 insideBorderDirection="VERTICAL"
                 onNextButtonClick={() => {
                   history.push("/event-creator/create-event");

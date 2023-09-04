@@ -27,7 +27,7 @@
         position: absolute;
         left: calc(3vmin);
         bottom: 0%;
-        
+
         img {
           width: 20vmin;
           user-select: none;
@@ -37,9 +37,11 @@
       &__buttons {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 15vmin;
         align-items: center;
         margin: 3vmin;
+        margin-left: 1.5vmin;
         font-family: "InterBold";
       }
 

@@ -10,6 +10,7 @@ interface ISlugLinkButtonProps {
   onNextButtonClick?: Function;
   disabled?: boolean;
   fixedWidth?: boolean;
+  width?: number | string;
   oneTimeButton?: boolean;
   border?: boolean;
   fontSize?: number | string;
@@ -33,6 +34,7 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
   onNextButtonClick = () => {},
   disabled,
   fixedWidth,
+  width,
   fontSize = "1.8vmin",
   oneTimeButton,
   border = false,
@@ -71,7 +73,7 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
         setIsHover(false);
       }}
       style={{
-        width: fixedWidth ? "10vmin" : "100%",
+        width: fixedWidth ? width : "100%",
         backgroundColor: backgroundColor,
         boxShadow: isHover
           ? `0 0 2vmin ${backgroundColor}`
@@ -126,30 +128,32 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
                 borderRadius: "2vmin",
                 borderWidth: 0,
                 paddingLeft: "2vmin",
-                paddingTop: "0.5vmin",
-                paddingBottom: "0.5vmin",
+                paddingTop: "1.5vmin",
+                paddingBottom: "1.5vmin",
                 paddingRight: "2vmin",
                 fontSize: "1.4vmin",
                 lineHeight: "1.7vmin",
                 fontWeight: "bold",
                 fontFamily: "InterLight",
                 minWidth: "35vmin",
+                outline: "none",
               }}
               placeholder={placeHolder}
             />
             <input
               style={{
-                borderRadius: "2vmin",
+                borderRadius: "6vmin",
                 borderWidth: 0,
                 paddingLeft: "2vmin",
-                paddingTop: "0.5vmin",
-                paddingBottom: "0.5vmin",
+                paddingTop: "1.5vmin",
+                paddingBottom: "1.5vmin",
                 paddingRight: "2vmin",
                 fontSize: "1.4vmin",
                 lineHeight: "1.7vmin",
                 fontWeight: "bold",
                 fontFamily: "InterLight",
                 minWidth: "35vmin",
+                outline: "none",
               }}
               placeholder={secondPlaceHolder}
             />
@@ -164,9 +168,9 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
             {extraLinkButtonVisible ? <div
               style={{
                 backgroundColor: linkButtonColor,
-                width: "3.4vmin",
-                height: "3.4vmin",
-                borderRadius: "3.4vmin",
+                width: "4.5vmin",
+                height: "4.5vmin",
+                borderRadius: "4.5vmin",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -186,9 +190,9 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
             <div
               style={{
                 backgroundColor: linkButtonColor,
-                width: "3.4vmin",
-                height: "3.4vmin",
-                borderRadius: "3.4vmin",
+                width: "4.5vmin",
+                height: "4.5vmin",
+                borderRadius: "4.5vmin",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -210,7 +214,7 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
         </div>
         <div
           style={{
-            paddingTop: "2vmin",
+            paddingTop: "3vmin",
             display: urlVisible ? "block" : "none",
           }}
         >
@@ -218,7 +222,7 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
             style={{
               color: "#F0BB51",
               fontSize: "2vmin",
-              fontFamily: "InterBold"
+              fontFamily: "InterBold",
             }}
           >
             page URL = eYeKONOS.com/
