@@ -3,9 +3,7 @@ import Claimer from "../components/claimer";
 
 const Claim = () => {
   return (
-    <div className="page-claim" style={{
-      paddingLeft: "20vmin",
-    }}>
+    <div className="page-claim">
       <Claimer />
     </div>
   );

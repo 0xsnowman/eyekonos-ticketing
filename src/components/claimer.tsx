@@ -17,9 +17,9 @@ const Claimer = () => {
             history.push("/my-events");
           }}
         >
-          <h3 className="component-claimer__main__corner-cut-rectangle__title">
+          <span className="component-claimer__main__corner-cut-rectangle__title">
             My Events
-          </h3>
+          </span>
           <div className="component-claimer__main__corner-cut-rectangle__title-line" />
           <div className="component-claimer__main__corner-cut-rectangle__content">
             <p>
@@ -40,9 +40,9 @@ const Claimer = () => {
             history.push("/event-creator");
           }}
         >
-          <h3 className="component-claimer__main__corner-cut-rectangle__title">
+          <span className="component-claimer__main__corner-cut-rectangle__title">
             Event Creator
-          </h3>
+          </span>
           <div className="component-claimer__main__corner-cut-rectangle__title-line" />
           <div className="component-claimer__main__corner-cut-rectangle__content">
             <p>

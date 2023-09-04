@@ -1,35 +1,31 @@
 .component-claimer {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  // gap: 20px;
   width: 100%;
   padding-top: 12vmin;
 
   &__main {
     display: flex;
     justify-content: center;
-    // align-items: center;
-    padding-top: 5vmin;
-    gap: 20px;
+    padding-top: 7vmin;
     width: 100%;
     &__svgs {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-left: 4vmin;
-      padding-right: 4vmin;
+      padding-left: 6vmin;
+      padding-right: 6vmin;
 
       img {
-        width: 15vmin;
+        width: 30vmin;
       }
     }
 
     &__corner-cut-rectangle {
-      width: 45vmin;
-      height: 45vmin;
-      background-color: #102f82;
+      width: 40vmin;
+      height: 40vmin;
+      background-color: #061B66;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -40,8 +36,7 @@
       &__title {
         color: #f0bb51;
         font-weight: bold;
-        font-size: 4vmin;
-        // padding: 10px;
+        font-size: 3.5vmin;
         font-family: "Nasalization";
         max-height: 2vmin;
       }
@@ -60,8 +55,8 @@
         gap: 1vmin;
         color: white;
         align-items: flex-start;
-        // padding: 20px;
         font-size: 3vmin;
+        line-height: 4vmin;
 
         span {
           font-family: "InterLight";
@@ -98,8 +93,10 @@
   }
 
   &__owlimage {
-    width: 20vmin;
-    height: 20vmin;
+    width: 25vmin;
+    height: 25vmin;
+    margin-top: -7vmin;
+    margin-left: 5vmin;
 
     img {
       width: 100%;

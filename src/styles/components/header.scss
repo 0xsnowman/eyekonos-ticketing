@@ -13,7 +13,7 @@
 
   &__fixer {
     position: fixed;
-    height: 9vmin;
+    height: 10vmin;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,16 +22,9 @@
 
     &__sidebar {
       width: calc(25% + 1.5vmin);
-      // max-width: 400px;
       padding-top: 2vmin;
       padding-bottom: 2vmin;
       background-color: #102f82;
-
-      // @media only screen and (max-width: 1518px) {
-      //   @media only screen and (min-width: 1500px) {
-      //     width: calc(25% + 12px);
-      //   }
-      // }
 
       &.invisible {
         display: none;
@@ -45,7 +38,8 @@
         display: none;
       }
 
-      &.side_bar {}
+      &.side_bar {
+      }
 
       @media only screen and (max-width: 720px) {
         display: none;
@@ -59,10 +53,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #F0BB51;
+        color: #f0bb51;
         text-decoration: underline;
 
-        border-right: 2px solid #F0BB51;
+        border-right: 2px solid #f0bb51;
         font-family: "AquireBold";
       }
     }
@@ -74,11 +68,10 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      // width: calc(100% - 40vmin);
       width: calc(75% - 1.5vmin);
 
       @media only screen and (max-width: 784px) {
-        width: 100%;
+        width: calc(100% - 20vmin);
       }
 
       &.logo_only {
@@ -102,8 +95,9 @@
     &__profile {
       width: 7vmin;
       height: 7vmin;
-      padding-right: 1vmin;
       cursor: pointer;
+      position: absolute;
+      right: 1vmin;
     }
 
     &__nav-mobile {
@@ -126,7 +120,6 @@
       }
 
       &__link {
-        // border-bottom: 1px solid white;
         border-bottom: 1px solid #333333;
         cursor: pointer;
 
@@ -140,7 +133,6 @@
           color: white;
 
           &__text {
-            
           }
 
           &__dropdown {
@@ -234,10 +226,18 @@
       flex-direction: row;
       gap: 25px;
       align-items: center;
-      // color: white;
 
       @media only screen and (max-width: 1096px) {
         display: none;
+      }
+
+      &__dot {
+        width: 1vmin;
+
+        @media only screen and (min-width: 1500px) {
+          padding-left: 3vmin;
+          padding-right: 3vmin;
+        }
       }
 
       &__link {
@@ -260,10 +260,9 @@
         }
 
         &:hover {
-          text-decoration: underline;          
-          
+          text-decoration: underline;
         }
-        
+
         &:hover &__menu {
           display: flex;
         }
@@ -309,5 +308,5 @@
 }
 
 .activeHeader {
-  color:#F0BB51
+  color: #f0bb51;
 }

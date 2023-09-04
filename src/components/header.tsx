@@ -253,7 +253,7 @@ const Header: React.FC<IHeaderProps> = ({
                     Setup
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <div className="component-header__fixer__nav__link">
                   <div
                     className={`component-header__fixer__nav__link__text ${
@@ -267,7 +267,7 @@ const Header: React.FC<IHeaderProps> = ({
                     NFT
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <div className="component-header__fixer__nav__link">
                   <div
                     className={`component-header__fixer__nav-mobile__link__text ${
@@ -279,7 +279,7 @@ const Header: React.FC<IHeaderProps> = ({
                     Flyer
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <div className="component-header__fixer__nav__link">
                   <div
                     className={`component-header__fixer__nav-mobile__link__text ${
@@ -294,7 +294,7 @@ const Header: React.FC<IHeaderProps> = ({
                     Tickets
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <div className="component-header__fixer__nav__link">
                   <div
                     className={`component-header__fixer__nav-mobile__link__text ${
@@ -377,7 +377,7 @@ const Header: React.FC<IHeaderProps> = ({
                   Exclusive Content
                 </a>
               </div>
-              <img src={EllipseSvg} alt="" width="10px" />
+              <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
               <div className="component-header__fixer__nav-mobile__link">
                 <a
                   className={`component-header__fixer__nav-mobile__link__text ${
@@ -392,7 +392,7 @@ const Header: React.FC<IHeaderProps> = ({
                   NFT
                 </a>
               </div>
-              <img src={EllipseSvg} alt="" width="10px" />
+              <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
               <div className="component-header__fixer__nav-mobile__link">
                 <a
                   className={`component-header__fixer__nav-mobile__link__text ${
@@ -423,7 +423,7 @@ const Header: React.FC<IHeaderProps> = ({
                     Event Media
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <div className="component-header__fixer__nav__link">
                   <div
                     className={`component-header__fixer__nav__link__text ${
@@ -437,7 +437,7 @@ const Header: React.FC<IHeaderProps> = ({
                     Exclusive Content
                   </div>
                 </div>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <a
                   className={`component-header__fixer__nav__link ${
                     clicked === "nft" ? "activeHeader" : ""
@@ -450,7 +450,7 @@ const Header: React.FC<IHeaderProps> = ({
                 >
                   NFT
                 </a>
-                <img src={EllipseSvg} alt="" width="10px" />
+                <img src={EllipseSvg} className="component-header__fixer__nav__dot" />
                 <a
                   className={`component-header__fixer__nav__link ${
                     clicked === "merch" ? "activeHeader" : ""

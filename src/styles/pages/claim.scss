@@ -3,21 +3,8 @@
 .page-claim {
   display: flex;
   justify-content: center;
-  width: 75%;
-  // overflow-y: scroll;
+  width: 100%;
   max-height: 100vh;
-
-  // // @media only screen and (min-width: 1520px) {
-  //   width: 100%;
-
-  //   @media only screen and (max-width: 1960px) {
-  //     width: calc(75% + 90px);
-
-  //     @media only screen and (max-width: 1600px) {
-  //       width: calc(75% + 50px);
-  //     }
-  //   }
-  // }
   
   &__content {
     display: flex;
