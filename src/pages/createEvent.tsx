@@ -4,14 +4,11 @@ import Button from "../components/button";
 
 import OwlOnRockSvg from "../assets/svgs/owlonrock.svg";
 import BackSvg from "../assets/svgs/back.svg";
-import useDeviceType from "../hooks/useDeviceType";
 import SlugLinkButton from "../components/spluglinkbutton";
-import useWindowHeight from "../hooks/useWindowHeight";
 import { useHistory } from "react-router-dom";
+import BackButton from "../components/backbutton";
 
 const CreateEvent = () => {
-  const deviceType = useDeviceType();
-  const deviceHeight = useWindowHeight();
   const history = useHistory();
 
   const [stage, setStage] = useState<"input" | "summary" | "checkout">("input");
@@ -19,48 +16,33 @@ const CreateEvent = () => {
   return (
     <div
       className="molecule-page page-createevent"
-      style={{
-        // height: deviceHeight - 90,
-      }}
+      style={
+        {
+          // height: deviceHeight - 90,
+        }
+      }
     >
       <div className="page-createevent__content">
         <div className="page-createevent__content__main">
           <div className="page-createevent__content__main__buttons">
-            <div
-              style={{
-                backgroundColor: "#102F82",
-                borderRadius: 10,
-                width: 50,
-                height: 50,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: 30,
-                color: "white",
-                padding: 5,
-                marginRight: 30,
-                fontFamily: "InterBold",
-                cursor: "pointer",
-              }}
-              onClick={() => history.goBack()}
-            >
-              <img src={BackSvg} width={40} height={40} />
-            </div>
+            <BackButton onClick={() => history.goBack()} />
             {stage === "input" && (
               <Button
                 border
                 borderRadius
                 color="white"
-                fontSize={28}
+                fontSize={"5vmin"}
                 fontWeight="bold"
-                paddingVertical={20}
+                paddingVertical={"4vmin"}
                 borderColor="#F0BB51"
-                borderWidth={3}
+                borderWidth={"0.4vmin"}
                 fixedWidth
-                width={400}
+                width={"50vmin"}
                 hoverable={false}
               >
-                <div style={{fontFamily:"InterBold", fontSize:'28px'}}>Event Details</div>
+                <div style={{ fontFamily: "InterBold", fontSize: "3vmin" }}>
+                  Event Details
+                </div>
               </Button>
             )}
             {stage === "summary" && (
@@ -68,13 +50,13 @@ const CreateEvent = () => {
                 border
                 borderRadius
                 color="white"
-                fontSize={28}
+                fontSize={"2.8vmin"}
                 fontWeight="bold"
-                paddingVertical={20}
+                paddingVertical={"2vmin"}
                 borderColor="#F0BB51"
-                borderWidth={3}
+                borderWidth={"0.3vmin"}
                 fixedWidth
-                width={600}
+                width={"60vmin"}
                 hoverable={false}
               >
                 Preview - Event Summary
@@ -85,19 +67,19 @@ const CreateEvent = () => {
                 border
                 borderRadius
                 color="white"
-                fontSize={28}
+                fontSize={"2.8vmin"}
                 fontWeight="bold"
-                paddingVertical={20}
+                paddingVertical={"2vmin"}
                 borderColor="white"
-                borderWidth={3}
+                borderWidth={"0.3vmin"}
                 fixedWidth
-                width={600}
+                width={"60vmin"}
                 hoverable={false}
               >
                 Checkout
               </Button>
             )}
-            <div style={{ width: 100 }}></div>
+            <div style={{ width: "10vmin" }}></div>
           </div>
           <div className="page-createevent__content__main__table">
             {stage === "input" && (
@@ -105,11 +87,12 @@ const CreateEvent = () => {
                 <SlugLinkButton
                   border
                   borderRadius
-                  placeHolder="Event Platform"
-                  secondPlaceHolder="API Key"
+                  fixedWidth
+                  width={"60vmin"}
                   urlVisible={false}
                   insideBorderDirection="VERTICAL"
-                  extraLinkButtonVisible
+                  placeHolder="Event Platform"
+                  secondPlaceHolder="API Key"
                   onNextButtonClick={() => {
                     setStage("summary");
                   }}

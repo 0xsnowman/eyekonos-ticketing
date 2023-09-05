@@ -125,16 +125,16 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
           >
             <input
               style={{
-                borderRadius: "2vmin",
+                borderRadius: "6vmin",
                 borderWidth: 0,
-                paddingLeft: "2vmin",
+                paddingLeft: "4vmin",
                 paddingTop: "1.5vmin",
                 paddingBottom: "1.5vmin",
                 paddingRight: "2vmin",
-                fontSize: "1.4vmin",
+                fontSize: "1.7vmin",
                 lineHeight: "1.7vmin",
-                fontWeight: "bold",
-                fontFamily: "InterLight",
+                fontWeight: "bolder",
+                fontFamily: "InterRegular",
                 minWidth: "35vmin",
                 outline: "none",
               }}
@@ -144,14 +144,14 @@ const SlugLinkButton: React.FC<ISlugLinkButtonProps> = ({
               style={{
                 borderRadius: "6vmin",
                 borderWidth: 0,
-                paddingLeft: "2vmin",
+                paddingLeft: "4vmin",
                 paddingTop: "1.5vmin",
                 paddingBottom: "1.5vmin",
                 paddingRight: "2vmin",
-                fontSize: "1.4vmin",
+                fontSize: "1.7vmin",
                 lineHeight: "1.7vmin",
-                fontWeight: "bold",
-                fontFamily: "InterLight",
+                fontWeight: "bolder",
+                fontFamily: "InterRegular",
                 minWidth: "35vmin",
                 outline: "none",
               }}

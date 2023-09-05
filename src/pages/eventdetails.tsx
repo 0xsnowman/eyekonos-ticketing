@@ -16,7 +16,7 @@ const EventDetails = () => {
       <div className="page-eventdetails__content">
         <div className="page-eventdetails__content__main">
           <div className="page-eventdetails__content__main__buttons">
-            <BackButton onClick={() => history.goBack()} />
+            <BackButton onClick={() => history.push("/event-creator")} />
             <Button
               border
               borderRadius
@@ -55,7 +55,7 @@ const EventDetails = () => {
                 paddingVertical={"2.3vmin"}
                 paddingHorizontal={"2vmin"}
                 borderRadius
-                borderRadiusAmount={"2.5vmin"}
+                borderRadiusAmount={"4.5vmin"}
                 color="white"
                 fontSize={"2.2vmin"}
                 fontWeight="bold"
