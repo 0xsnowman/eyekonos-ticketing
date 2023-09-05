@@ -77,7 +77,7 @@ const CustomTreeItemEx: React.FC<ICustomTreeItem> = styled(TreeItem)(
   ({ theme }) => ({
     "& .MuiTreeItem-content": {
       borderRadius: "2vmin !important",
-      backgroundColor: "#3663CD",
+      backgroundColor: "#102F82",
       paddingTop: "1vmin",
       paddingLeft: "1vmin",
       paddingRight: "1vmin",
@@ -133,21 +133,22 @@ const ETreeView: React.FC<IETreeViewProps> = ({
         key={index}
         style={{ position: "relative", backgroundColor: backgroundColor }}
         className="hover-item"
-      >{console.log('item.childern', item.children)}
+      >
         {isSideBar && (
           <CustomTreeItem
             key={index}
             nodeId={item.id}
-            label={
-              Number(windowWidth) < 832
-                ? item.label.slice(0, 3) + "..."
-                : item.label +
-                  " (" +
-                  (Array.isArray(item.children)
-                    ? item.children.length.toString()
-                    : "0") +
-                  ")"
-            }
+            label={item.label}
+            // label={
+            //   Number(windowWidth) < 832
+            //     ? item.label.slice(0, 3) + "..."
+            //     : item.label +
+            //       " (" +
+            //       (Array.isArray(item.children)
+            //         ? item.children.length.toString()
+            //         : "0") +
+            //       ")"
+            // }
           >
             {Array.isArray(item.children)
               ? renderTreeItems(item.children)
@@ -158,18 +159,19 @@ const ETreeView: React.FC<IETreeViewProps> = ({
           <CustomTreeItemEx
             key={index}
             nodeId={item.id}
-            label={
-              item.label === "+"
-                ? "+"
-                : Number(windowWidth) < 832 || Number(windowWidth) > 2000
-                ? item.label.slice(0, 3) + "..."
-                : item.label +
-                  " (" +
-                  (Array.isArray(item.children)
-                    ? item.children.length.toString()
-                    : "0") +
-                  ")"
-            }
+            label={item.label}
+            // label={
+            //   item.label === "+"
+            //     ? "+"
+            //     : Number(windowWidth) < 832 || Number(windowWidth) > 2000
+            //     ? item.label.slice(0, 3) + "..."
+            //     : item.label +
+            //       " (" +
+            //       (Array.isArray(item.children)
+            //         ? item.children.length.toString()
+            //         : "0") +
+            //       ")"
+            // }
           >
             {Array.isArray(item.children)
               ? renderTreeItems(item.children)

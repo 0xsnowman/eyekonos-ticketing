@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ETreeView from "./etreeview";
-import Button from "./button";
 import { useLocation } from "react-router-dom";
 
 interface IETreeViewItem {
@@ -93,22 +92,7 @@ const SideBar = () => {
         <ETreeView treeData={treeData} />
       </div>
       <div className="side-bar__add-category">
-        <span style={{
-          color:  "#F0E051",
-          fontSize: "3vmin",
-          textAlign: "center",
-          fontFamily:"InterBold"
-        }}>Add Category +</span>
-      {/* <Button
-        color="white"
-        fontSize={"3vmin"}
-        fontWeight="bold"
-        paddingVertical={20}
-        fixedHeight
-        height={"8vmin"}
-      >
-        Add Category +
-      </Button> */}
+      Add Category +
       </div>
     </div>
   );
