@@ -475,11 +475,11 @@ const Header: React.FC<IHeaderProps> = ({
             />
           </Container>
         )}
-        <img
+        {location.pathname.endsWith("/") && <img
           className="component-header__fixer__profile"
           src={ProfileCircleSvg}
           alt="profile"
-        />
+        />}
       </div>
     </div>
   );
