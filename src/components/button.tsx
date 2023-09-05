@@ -85,15 +85,15 @@ const Button: React.FC<IButtonProps> = ({
         background: backgroundColor,
         boxShadow:
           isHover && !borderOutside && hoverable
-            ? `0 0 2px 2px ${backgroundColor}, 0 0 6px 6px #F0BB51FF`
-            : "0px 0px 2vmin transparent",
+            ? `0 0 0.2vmin 0.2vmin ${backgroundColor}, 0 0 0.6vmin 0.6vmin #F0BB51FF`
+            : "0 0 2vmin transparent",
         textAlign: `center`,
         paddingTop: borderOutside ? 0 : paddingVerticalOutside,
         paddingBottom: borderOutside ? 0 : paddingVerticalOutside,
         cursor: hoverable ? "pointer" : "auto",
         borderRadius: borderRadius ? borderRadiusAmount : 0,
         color: color,
-        border: borderOutside ? "4px solid " + borderColor : "",
+        border: borderOutside ? "0.4vmin solid " + borderColor : "",
         display: borderOutside ? "flex" : "block",
         justifyContent: borderOutside ? "center" : "initial",
         alignItems: borderOutside ? "center" : "initial",
@@ -106,19 +106,19 @@ const Button: React.FC<IButtonProps> = ({
           borderTop:
             border && insideBorderDirection === "HORIZONTAL"
               ? `${borderWidth} solid ${borderColor}`
-              : "0px",
+              : "0",
           borderBottom:
             border && insideBorderDirection === "HORIZONTAL"
               ? `${borderWidth} solid ${borderColor}`
-              : "0px",
+              : "0",
           borderLeft:
             border && insideBorderDirection === "VERTICAL"
               ? `${borderWidth} solid ${borderColor}`
-              : "0px",
+              : "0",
           borderRight:
             border && insideBorderDirection === "VERTICAL"
               ? `${borderWidth} solid ${borderColor}`
-              : "0px",
+              : "0",
           paddingTop: paddingVertical,
           paddingBottom: paddingVertical,
           paddingLeft: paddingHorizontal,

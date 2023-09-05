@@ -7,22 +7,10 @@
   overflow-y: scroll;
   max-height: 100vh;
 
-  // @media only screen and (min-width: 1520px) {
-  //   width: 100%;
-
-  //   @media only screen and (max-width: 1960px) {
-  //     width: calc(75% + 90px);
-
-  //     @media only screen and (max-width: 1600px) {
-  //       width: calc(75% + 50px);
-  //     }
-  //   }
-  // }
   &__content {
     display: flex;
     justify-content: center;
     overflow: auto;
-    // align-items: center;
     width: 100%;
 
     &__main {
@@ -30,10 +18,9 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 20px;
+      gap: 2vmin;
       width: 50%;
-      max-width: 1520px;
-      padding-top: 50px;
+      padding-top: 8vmin;
 
       &__footer {
         padding: 10vmin;
@@ -42,7 +29,7 @@
       span {
         font-family: "InterBold";
         font-weight: bold;
-        font-size: 22px;
+        font-size: 3vmin;
         color: #102f82;
       }
 
