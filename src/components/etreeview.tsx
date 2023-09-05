@@ -1,12 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { TreeView, TreeItem } from "@mui/lab";
 import { styled } from "@mui/material/styles";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import PlusIcon from "../assets/svgs/plus.png";
 import MinusSvg from "../assets/svgs/minus.svg";
-import RoundRectangelSvg from "../assets/svgs/roundrectangle.svg";
-import useWindowWidth from "../hooks/useWindowWidth";
 
 interface IETreeViewItem {
   id: string;
@@ -117,6 +114,11 @@ const CustomTreeItemEx: React.FC<ICustomTreeItem> = styled(TreeItem)(
     "& .css-1g86id8-MuiTreeItem-content": {
       width: "initial",
     },
+    "& .css-g0jugy-MuiCollapse-root-MuiTreeItem-group": {
+      "& .MuiTreeItem-group": {
+        marginLeft: "1.7vmin !important",
+      }
+    },
   })
 );
 
@@ -125,8 +127,6 @@ const ETreeView: React.FC<IETreeViewProps> = ({
   backgroundColor = "transparent",
   isSideBar = false,
 }) => {
-  const [windowWidth, setWindowWidth] = useWindowWidth();
-  console.log(windowWidth);
   const renderTreeItems = (items: Array<IETreeViewItem>) => {
     return items.map((item, index) => (
       <div
