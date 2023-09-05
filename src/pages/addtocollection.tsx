@@ -28,6 +28,7 @@ import Croba from "../components/croba";
 import CollectionTypeTicket from "../components/collectiontypeticket";
 import useWindowHeight from "../hooks/useWindowHeight";
 import { useHistory, useLocation } from "react-router-dom";
+import BackButton from "../components/backbutton";
 
 const AddToCollection = () => {
   const deviceType = useDeviceType();
@@ -38,49 +39,29 @@ const AddToCollection = () => {
   );
 
   return (
-    <div
-      className="molecule-page page-addtocollection"
-      style={{
-        // height: deviceHeight - 90,
-      }}
-    >
+    <div className="molecule-page page-addtocollection">
       {stage === "select" && (
         <div className="page-addtocollection__content">
           <div className="page-addtocollection__content__main">
             <div className="page-addtocollection__content__main__buttons">
-              <div
-                style={{
-                  backgroundColor: "#102F82",
-                  borderRadius: 10,
-                  width: 40,
-                  height: 40,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  fontSize: 30,
-                  color: "white",
-                  padding: 5,
-                  marginRight: 30,
-                  fontFamily: "InterRegular",
-                  cursor: "pointer",
-                }}
-                onClick={() => history.goBack()}
-              >
-                <img src={BackSvg} width={40} height={40} />
-              </div>
+              <BackButton onClick={() => history.push("/event-creator")} />
               <div className="page-addtocollection__content__main__buttons__right">
                 <Button
                   border
                   borderRadius
                   color="white"
-                  fontSize={22}
+                  fixedWidth
+                  width={"40vmin"}
+                  fontSize={"2.2vmin"}
                   fontWeight="bold"
-                  paddingVertical={20}
+                  paddingVertical={"3vmin"}
                   borderColor="#F0BB51"
-                  borderWidth={2}
+                  borderWidth={"0.2vmin"}
                   hoverable={false}
                 >
-                  <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create & Manage NFT’s</div>
+                  <div style={{ fontFamily: "InterBold", fontSize: "2.8vmin" }}>
+                    Create & Manage NFT’s
+                  </div>
                 </Button>
 
                 <div className="page-addtocollection__content__main__buttons__right__twobtns">
@@ -90,7 +71,7 @@ const AddToCollection = () => {
                       setStage("ticket");
                     }}
                   >
-                    <Croba text="Mint" width={260} height={260} />
+                    <Croba text="Mint" width={26} height={26} />
                   </div>
                   <div
                     id="croba-widthdraw"
@@ -98,7 +79,7 @@ const AddToCollection = () => {
                       setStage("ticket");
                     }}
                   >
-                    <Croba text="Widthdraw" width={260} height={260} />
+                    <Croba text="Widthdraw" width={26} height={26} />
                   </div>
                   <div
                     id="croba-create"
@@ -106,7 +87,7 @@ const AddToCollection = () => {
                       setStage("ticket");
                     }}
                   >
-                    <Croba text="Create" width={300} height={300} />
+                    <Croba text="Create" width={30} height={30} />
                   </div>
                   <div
                     id="croba-import"
@@ -114,7 +95,7 @@ const AddToCollection = () => {
                       setStage("ticket");
                     }}
                   >
-                    <Croba text="Import" width={300} height={300} />
+                    <Croba text="Import" width={30} height={30} />
                   </div>
                 </div>
               </div>
@@ -132,16 +113,16 @@ const AddToCollection = () => {
               <div
                 style={{
                   backgroundColor: "#102F82",
-                  borderRadius: 10,
-                  width: 50,
-                  height: 50,
+                  borderRadius: "1vmin",
+                  width: "5vmin",
+                  height: "5vmin",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  fontSize: 30,
+                  fontSize: "3vmin",
                   color: "white",
-                  padding: 5,
-                  marginRight: 30,
+                  padding: "0.5vmin",
+                  marginRight: "3vmin",
                   fontFamily: "InterRegular",
                   cursor: "pointer",
                 }}
@@ -149,42 +130,50 @@ const AddToCollection = () => {
                   setStage("select");
                 }}
               >
-                <img src={BackSvg} width={40} height={40} />
+                <img src={BackSvg} width={"4vmin"} height={"4vmin"} />
               </div>
               <Button
                 border
                 borderRadius
                 color="white"
-                fontSize={22}
+                fontSize={"2.2vmin"}
                 fontWeight="bold"
-                paddingVertical={25}
+                paddingVertical={"2.5vmin"}
                 borderColor="#F0BB51"
-                borderWidth={2}
+                borderWidth={"0.2vmin"}
                 hoverable={false}
               >
-                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Choose Collectible Type</div>
+                <div style={{ fontFamily: "InterBold", fontSize: "2.8vmin" }}>
+                  Choose Collectible Type
+                </div>
               </Button>
             </div>
             <div className="page-collectiontype__content__main__table">
               <div
                 style={{
-                  marginTop: 200,
+                  marginTop: "20vmin",
                 }}
                 onClick={() => {
                   setStage("upload");
                 }}
               >
                 <CollectionTypeTicket title="Standard NFT" subtitle="(ERC-721)">
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Unique Tradeable Asset</span>
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Royalties for Creator</span>
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Compatible with most blockchain wallets</span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - Unique Tradeable Asset
+                  </span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - Royalties for Creator
+                  </span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - Compatible with most blockchain wallets
+                  </span>
                 </CollectionTypeTicket>
               </div>
               <div
                 style={{
-                  marginTop: -50,
-                  paddingLeft: 20,
-                  paddingRight: 20,
+                  marginTop: "-5vmin",
+                  paddingLeft: "2vmin",
+                  paddingRight: "2vmin",
                 }}
                 onClick={() => {
                   setStage("upload");
@@ -199,16 +188,22 @@ const AddToCollection = () => {
               </div>
               <div
                 style={{
-                  marginTop: 200,
+                  marginTop: "20vmin",
                 }}
                 onClick={() => {
                   setStage("upload");
                 }}
               >
                 <CollectionTypeTicket title="eYeKON" subtitle="(COMING SOON)">
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Social Media Integration</span>
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- Gaming Integration</span>
-                  <span style={{fontFamily:"InterLight", fontSize:"22px"}}>- And more...</span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - Social Media Integration
+                  </span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - Gaming Integration
+                  </span>
+                  <span style={{ fontFamily: "InterLight", fontSize: "2.2vmin" }}>
+                    - And more...
+                  </span>
                 </CollectionTypeTicket>
               </div>
             </div>
@@ -222,34 +217,36 @@ const AddToCollection = () => {
               <div
                 style={{
                   backgroundColor: "#102F82",
-                  borderRadius: 10,
-                  width: 50,
-                  height: 50,
+                  borderRadius: "1vmin",
+                  width: "5vmin",
+                  height: "5vmin",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  fontSize: 30,
+                  fontSize: "3vmin",
                   color: "white",
-                  padding: 5,
-                  marginRight: 30,
+                  padding: "0.5vmin",
+                  marginRight: "3vmin",
                   fontFamily: "InterRegular",
-                  cursor: "pointer"
+                  cursor: "pointer",
                 }}
                 onClick={() => {
                   setStage("ticket");
                 }}
               >
-                <img src={BackSvg} width={40} height={40} />
+                <img src={BackSvg} width={"4vmin"} height={"4vmin"} />
               </div>
               <Button
                 border
                 borderRadius
                 color="white"
-                fontSize={24}
+                fontSize={"2.4vmin"}
                 fontWeight="bold"
                 hoverable={false}
               >
-                <div style= {{fontFamily:"InterBold", fontSize:"28px"}}>Create Standard NFT (ERC 721)</div>
+                <div style={{ fontFamily: "InterBold", fontSize: "2.8vmin" }}>
+                  Create Standard NFT (ERC 721)
+                </div>
               </Button>
             </div>
             <div>
@@ -263,6 +260,3 @@ const AddToCollection = () => {
 };
 
 export default AddToCollection;
-function useEffect(arg0: () => void, arg1: never[]) {
-  throw new Error("Function not implemented.");
-}

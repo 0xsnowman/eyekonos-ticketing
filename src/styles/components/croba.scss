@@ -8,14 +8,14 @@
   background-image: url('../../assets/svgs/rightrectangle.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 240px;
-  height: 240px;
+  width: 24vmin;
+  height: 24vmin;
   cursor: pointer;
   transition: ease-in-out all 0.1s;
 
   &:hover {
-    filter: drop-shadow(0px 7px 3px #0066FF);
-    margin-top: -8px;
+    filter: drop-shadow(0px 0.7vmin 0.3vmin #0066FF);
+    margin-top: -0.8vmin;
   }
 
   &__rectangle {
@@ -24,15 +24,15 @@
 
   &__angle {
     position: absolute;
-    left: 73px;
-    top: 12px;
+    width: 50%;
+    height: 50%;
     user-select: none;
   }
 
   span {
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2.4vmin;
     word-wrap: break-word;
     width: 50%;
   }

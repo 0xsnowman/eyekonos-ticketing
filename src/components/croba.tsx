@@ -1,39 +1,43 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import RightAngleSvg from "../assets/svgs/rightangle.svg";
-import RightRectangleSvg from "../assets/svgs/rightrectangle.svg";
 
 interface ICrobaProps {
   text: string;
-  width?: number;
-  height?: number;
-  fontSize?: number;
+  width?: number; // this is only vmin
+  height?: number; // this is only vmin
+  fontSize?: number | string;
 }
 
 const Croba: React.FC<ICrobaProps> = ({
   text,
-  width = 240,
-  height = 240,
-  fontSize = 24,
+  width = 24,
+  height = 24,
+  fontSize = "2.4vmin",
 }) => {
   return (
     <div
       className="component-croba"
       style={{
-        width: width,
-        height: height,
+        width: width + "vmin",
+        height: height + "vmin",
       }}
     >
       <img
         src={RightAngleSvg}
         className="component-croba__angle"
         style={{
-          left: 73 + (width - 240) / 2,
-          top: 12 + (height - 240) / 5,
+          left: width >= 30 ? "7.5vmin" : "6.5vmin",
+          top: width >= 30 ? "3.5vmin" : "2.5vmin",
         }}
       />
-      <span style={{
-        fontSize: fontSize,
-      }}>{text}</span>
+      <span
+        style={{
+          fontSize: fontSize,
+        }}
+      >
+        {text}
+      </span>
     </div>
   );
 };
