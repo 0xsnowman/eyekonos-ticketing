@@ -40,6 +40,9 @@
 @import "./ticketdesign.scss";
 @import "./accountsettings.scss";
 @import "./nftorganize.scss";
+@import "./login.scss";
+@import "./signup.scss";
+@import "./verify.scss";
 
 .molecule-page {
   scrollbar-width: 12px;
@@ -70,7 +73,7 @@
 
   a {
     text-decoration: none;
-    transition: all .5s;
+    transition: all 0.5s;
     &:hover {
       text-decoration: underline;
       color: #4876c1;

@@ -8,6 +8,8 @@ import NotFound from "./pages/not-found";
 // style
 import "./styles/index.scss";
 import "react-toastify/dist/ReactToastify.css";
+
+// pages
 import Create from "./pages/create";
 import Filter from "./pages/filter";
 import Claim from "./pages/claim";
@@ -52,8 +54,12 @@ import Settings from "./pages/settings";
 import TicketDesign from "./pages/ticketdesign";
 import AccountSettings from "./pages/accountsettings";
 import NFTOrganize from "./pages/nftorganize";
+import { Login } from "./pages/login";
+import { SignUp } from "./pages/signup";
+import { Verify } from "./pages/verify";
 import store from "./redux/store";
 import { Provider } from "react-redux";
+import { AuthProvider } from "./providers/auth.provider";
 
 const App: React.FC = () => {
   return (
@@ -61,116 +67,127 @@ const App: React.FC = () => {
       <BrowserRouter>
         <Header />
         <BrowserContainer>
-          <SideBar />
           <Switch>
-            <Route exact path="/">
-              <Claim />
+            <Route exact path="/login">
+              <Login />
             </Route>
-            <Route exact path="/account">
-              <AccountSettings />
+            <Route exact path="/signup">
+              <SignUp />
             </Route>
-            <Route exact path="/event-creator/new-event">
-              <EventDetails />
+            <Route exact path="/verify">
+              <Verify />
             </Route>
-            <Route exact path="/event-creator/create-event">
-              <CreateEvent />
-            </Route>
-            <Route exact path="/event-creator/nft">
-              <Organize />
-            </Route>
-            <Route exact path="/event-creator/nft/manage">
-              <AddToCollection />
-            </Route>
-            <Route exact path="/event-creator/nft/allocate">
-              <NFTToTickets />
-            </Route>
-            <Route exact path="/event-creator/nft/organize">
-              <NFTOrganize />
-            </Route>
-            <Route exact path="/event-creator/nft/opensea">
-              <Upload />
-            </Route>
-            <Route exact path="/event-creator/admissions">
-              <ManageAdmissions />
-            </Route>
-            <Route exact path="/event-creator/admissions/manage">
-              <ManageAdmissionsTable />
-            </Route>
-            <Route exact path="/event-creator/admissions/scan">
-              <Scan />
-            </Route>
-            <Route exact path="/event-creator/tickets">
-              <Setup />
-            </Route>
-            <Route exact path="/event-creator/tickets/print">
-              <Print />
-            </Route>
-            <Route exact path="/event-creator/tickets/print-preview">
-              <PrintPreview />
-            </Route>
-            <Route exact path="/event-creator/tickets/settings">
-              <Settings />
-            </Route>
-            <Route exact path="/event-creator/tickets/design">
-              <TicketDesign />
-            </Route>
-            <Route exact path="/event-creator/setup">
-              <EventCreatorSetup />
-            </Route>
-            <Route exact path="/event-creator/individual-seating">
-              <SpecificTicketNFTs />
-            </Route>
-            <Route exact path="/event-creator/setup/manage-collaborators">
-              <ManageCollaborators />
-            </Route>
-            <Route exact path="/event-creator/setup/media">
-              <ManageData />
-            </Route>
-            <Route exact path="/event-creator/setup/media/user-uploads">
-              <ManageUserMedia />
-            </Route>
-            <Route exact path="/event-creator/setup/media/upload-limits">
-              <UploadDataLimits />
-            </Route>
-            <Route exact path="/event-creator/setup/media/add-storage">
-              <AddStorage />
-            </Route>
-            <Route exact path="/event-creator/:noData?">
-              <Create />
-            </Route>
-            <Route exact path="/pagecreate">
-              <PageCreate />
-            </Route>
-            <Route exact path="/event">
-              <EventType />
-            </Route>
-            <Route exact path="/event/nft">
-              <MyNFT />
-            </Route>
-            <Route exact path="/event/exclusives">
-              <ExclusiveContent />
-            </Route>
-            <Route exact path="/event/media">
-              <EventMedia />
-            </Route>
-            <Route exact path="/permissions">
-              <Permissions />
-            </Route>
-            {/* <Route exact path="/collectiontype">
+            <AuthProvider>
+              <SideBar />
+              <Route exact path="/">
+                <Claim />
+              </Route>
+              <Route exact path="/account">
+                <AccountSettings />
+              </Route>
+              <Route exact path="/event-creator/new-event">
+                <EventDetails />
+              </Route>
+              <Route exact path="/event-creator/create-event">
+                <CreateEvent />
+              </Route>
+              <Route exact path="/event-creator/nft">
+                <Organize />
+              </Route>
+              <Route exact path="/event-creator/nft/manage">
+                <AddToCollection />
+              </Route>
+              <Route exact path="/event-creator/nft/allocate">
+                <NFTToTickets />
+              </Route>
+              <Route exact path="/event-creator/nft/organize">
+                <NFTOrganize />
+              </Route>
+              <Route exact path="/event-creator/nft/opensea">
+                <Upload />
+              </Route>
+              <Route exact path="/event-creator/admissions">
+                <ManageAdmissions />
+              </Route>
+              <Route exact path="/event-creator/admissions/manage">
+                <ManageAdmissionsTable />
+              </Route>
+              <Route exact path="/event-creator/admissions/scan">
+                <Scan />
+              </Route>
+              <Route exact path="/event-creator/tickets">
+                <Setup />
+              </Route>
+              <Route exact path="/event-creator/tickets/print">
+                <Print />
+              </Route>
+              <Route exact path="/event-creator/tickets/print-preview">
+                <PrintPreview />
+              </Route>
+              <Route exact path="/event-creator/tickets/settings">
+                <Settings />
+              </Route>
+              <Route exact path="/event-creator/tickets/design">
+                <TicketDesign />
+              </Route>
+              <Route exact path="/event-creator/setup">
+                <EventCreatorSetup />
+              </Route>
+              <Route exact path="/event-creator/individual-seating">
+                <SpecificTicketNFTs />
+              </Route>
+              <Route exact path="/event-creator/setup/manage-collaborators">
+                <ManageCollaborators />
+              </Route>
+              <Route exact path="/event-creator/setup/media">
+                <ManageData />
+              </Route>
+              <Route exact path="/event-creator/setup/media/user-uploads">
+                <ManageUserMedia />
+              </Route>
+              <Route exact path="/event-creator/setup/media/upload-limits">
+                <UploadDataLimits />
+              </Route>
+              <Route exact path="/event-creator/setup/media/add-storage">
+                <AddStorage />
+              </Route>
+              <Route exact path="/event-creator/:noData?">
+                <Create />
+              </Route>
+              <Route exact path="/pagecreate">
+                <PageCreate />
+              </Route>
+              <Route exact path="/event">
+                <EventType />
+              </Route>
+              <Route exact path="/event/nft">
+                <MyNFT />
+              </Route>
+              <Route exact path="/event/exclusives">
+                <ExclusiveContent />
+              </Route>
+              <Route exact path="/event/media">
+                <EventMedia />
+              </Route>
+              <Route exact path="/permissions">
+                <Permissions />
+              </Route>
+              {/* <Route exact path="/collectiontype">
             <CollectionType />
           </Route> */}
-            <Route exact path="/accountaction">
-              <AccountAction />
-            </Route>
-            <Route exact path="/increasestorage">
-              <IncreaseStorage />
-            </Route>
-            {/* <Route exact path="/ticketallocation">
+              <Route exact path="/accountaction">
+                <AccountAction />
+              </Route>
+              <Route exact path="/increasestorage">
+                <IncreaseStorage />
+              </Route>
+              {/* <Route exact path="/ticketallocation">
             <TicketAllocation />
           </Route> */}
-            <Route exact path="/my-events">
-              <MyEvents />
-            </Route>
+              <Route exact path="/my-events">
+                <MyEvents />
+              </Route>
+            </AuthProvider>
             <Route exact path="/not-found">
               <NotFound />
             </Route>
