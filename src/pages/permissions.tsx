@@ -32,9 +32,12 @@ const Permissions = () => {
   const history = useHistory();
 
   return (
-    <div className="molecule-page page-permissions" style={{
-      height: deviceHeight - 90
-    }}>
+    <div
+      className="molecule-page page-permissions"
+      style={{
+        height: deviceHeight - 90,
+      }}
+    >
       <div className="page-permissions__content">
         <div className="page-permissions__content__main">
           <div className="page-permissions__content__main__buttons">
